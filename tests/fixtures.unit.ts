@@ -42,4 +42,10 @@ describe("Fixtures", () => {
     isFixture(autocomplete.empty);
     isFixture(autocomplete.multipleResidence.success);
   });
+
+  it ("exports keys fixtures", () => {
+    isFixture(keys.check.available);
+    isFixture(keys.check.unavailable);
+    isFixture(keys.check.invalid);
+  });
 });
