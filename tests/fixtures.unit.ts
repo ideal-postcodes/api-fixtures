@@ -53,4 +53,9 @@ describe("Fixtures", () => {
     isFixture(udprn.success);
     isFixture(udprn.notFound);
   });
+
+  it ("exports UMPRN fixtures", () => {
+    isFixture(umprn.success);
+    isFixture(umprn.notFound);
+  });
 });
