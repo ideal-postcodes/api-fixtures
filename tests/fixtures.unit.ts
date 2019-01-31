@@ -36,4 +36,10 @@ describe("Fixtures", () => {
     isFixture(addresses.empty);
     isFixture(addresses.multipleResidence.success);
   });
+
+  it ("exports addresses fixtures", () => {
+    isFixture(autocomplete.success);
+    isFixture(autocomplete.empty);
+    isFixture(autocomplete.multipleResidence.success);
+  });
 });

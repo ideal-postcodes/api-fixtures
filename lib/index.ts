@@ -1,13 +1,11 @@
 import { postcodes } from "./fixtures/postcodes";
 import { addresses } from "./fixtures/addresses";
+import { autocomplete } from "./fixtures/autocomplete";
 
 export const fixtures = {
   postcodes,
   addresses,
-  autocomplete: {
-    success: {},
-    empty: {},
-  },
+  autocomplete,
   keys: {
     check: {
       available: {},
