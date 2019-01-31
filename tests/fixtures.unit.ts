@@ -11,8 +11,22 @@ const {
   errors,
 } = fixtures;
 
+const isFixture = (fixture: any): void => {
+  assert.isDefined(fixture.description);
+  assert.isDefined(fixture.url);
+  assert.isDefined(fixture.query);
+  assert.isDefined(fixture.headers);
+  assert.isDefined(fixture.httpStatus);
+  assert.isDefined(fixture.body);
+};
+
 describe("Fixtures", () => {
   it ("exports fixtures module", () => {
     assert.isDefined(fixtures);
+  });
+  it ("exports postcodes fixtures", () => {
+    isFixture(postcodes.success);
+    isFixture(postcodes.notFound);
+    isFixture(postcodes.multipleResidence.success);
   });
 });

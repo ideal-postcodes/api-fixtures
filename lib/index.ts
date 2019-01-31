@@ -1,11 +1,7 @@
+import { postcodes } from "./fixtures/postcodes";
+
 export const fixtures = {
-  postcodes: {
-    success: {},
-    notFound: {},
-    multipleResidence: {
-      success: {}
-    },
-  },
+  postcodes,
   addresses: {
     success: {},
     empty: {},
