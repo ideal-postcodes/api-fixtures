@@ -44,8 +44,11 @@
   "devDependencies": {
     "@types/chai": "~4.1.7",
     "@types/mocha": "~5.2.5",
+    "@types/node": "~10.12.20",
     "chai": "~4.2.0",
     "coveralls": "~3.0.2",
+    "dotenv": "~6.2.0",
+    "fetch": "~1.1.0",
     "mocha": "~5.2.0",
     "nyc": "~13.1.0",
     "source-map-support": "~0.5.9",
