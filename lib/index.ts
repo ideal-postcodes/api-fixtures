@@ -3,6 +3,7 @@ import { addresses } from "./fixtures/addresses";
 import { autocomplete } from "./fixtures/autocomplete";
 import { keys } from "./fixtures/keys";
 import { udprn } from "./fixtures/udprn";
+import { umprn } from "./fixtures/umprn";
 
 export const fixtures = {
   postcodes,
@@ -10,10 +11,7 @@ export const fixtures = {
   autocomplete,
   keys,
   udprn,
-  umprn: {
-    success: { },
-    notFound: {},
-  },
+  umprn,
   errors: {
     invalidKey: {},
     invalidUserToken: {},
