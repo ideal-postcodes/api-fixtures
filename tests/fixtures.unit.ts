@@ -24,9 +24,16 @@ describe("Fixtures", () => {
   it ("exports fixtures module", () => {
     assert.isDefined(fixtures);
   });
+
   it ("exports postcodes fixtures", () => {
     isFixture(postcodes.success);
     isFixture(postcodes.notFound);
     isFixture(postcodes.multipleResidence.success);
+  });
+
+  it ("exports addresses fixtures", () => {
+    isFixture(addresses.success);
+    isFixture(addresses.empty);
+    isFixture(addresses.multipleResidence.success);
   });
 });
