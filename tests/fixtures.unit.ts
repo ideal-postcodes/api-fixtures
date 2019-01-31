@@ -58,4 +58,12 @@ describe("Fixtures", () => {
     isFixture(umprn.success);
     isFixture(umprn.notFound);
   });
+
+  it ("exports error fixtures", () => {
+    isFixture(errors.invalidKey);
+    isFixture(errors.invalidUrl);
+    isFixture(errors.balanceDepleted);
+    isFixture(errors.dailyLimitReached);
+    isFixture(errors.dailyIpRateLimitReached);
+  });
 });
