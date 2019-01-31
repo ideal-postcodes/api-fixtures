@@ -48,4 +48,9 @@ describe("Fixtures", () => {
     isFixture(keys.check.unavailable);
     isFixture(keys.check.invalid);
   });
+
+  it ("exports UDPRN fixtures", () => {
+    isFixture(udprn.success);
+    isFixture(udprn.notFound);
+  });
 });
