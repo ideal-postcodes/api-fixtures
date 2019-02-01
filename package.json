@@ -15,6 +15,9 @@
     "coverage": "node_modules/.bin/nyc report --reporter=text-lcov | node_modules/.bin/coveralls || true",
     "prepare": "npm run build"
   },
+  "prettier": {
+    "trailingComma": "es5"
+  },
   "nyc": {
     "include": [
       "lib/**/*.ts"
@@ -51,6 +54,7 @@
     "fetch": "~1.1.0",
     "mocha": "~5.2.0",
     "nyc": "~13.1.0",
+    "prettier": "~1.16.3",
     "source-map-support": "~0.5.9",
     "ts-node": "~8.0.1",
     "tslint": "~5.12.1",
