@@ -3,6 +3,10 @@ import {
   replaceSecrets,
 } from "./util";
 
+import {
+  format,
+} from "prettier";
+
 interface StringMap {
   [key: string]: string;
 }
@@ -33,7 +37,7 @@ interface Options {
   secrets: Secrets;
 }
 
-interface HttpResponse {
+export interface HttpResponse {
   httpStatus: number;
   body: any;
   definition: Definition;
@@ -95,3 +99,28 @@ export class Resource {
     return Promise.all(requests);
   }
 }
+
+const DEFAULT_SPACING = 2;
+const toJson = (o: {}): string => JSON.stringify(o, null, DEFAULT_SPACING);
+
+/**
+ * toString
+ *
+ * Writes a fixture HttpResponse to string
+ */
+export const toString = (fixture: HttpResponse): string => {
+  const parser = "typescript";
+  const { definition } = fixture;
+  const result = `
+    export const payload = {
+      description: "${definition.description}",
+      url: "${definition.url}",
+      query: ${toJson(definition.query || {})},
+      headers: ${toJson(definition.headers || {})},
+      httpStatus: ${fixture.httpStatus},
+      body: ${toJson(fixture.body)}
+    };
+  `;
+        return format(result, { parser });
+}
+
