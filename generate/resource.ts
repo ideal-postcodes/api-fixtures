@@ -7,29 +7,11 @@ import {
   format,
 } from "prettier";
 
-interface StringMap {
-  [key: string]: string;
-}
-
-export interface HttpOptions {
-  url: string;
-  query?: StringMap;
-  headers?: StringMap;
-  method?: string;
-  body?: {};
-}
-
-/**
- * Definition
- * @hidden
- *
- * Resource definitions. Describes an endpoint as well as how to extract
- * the data via the live API
- */
-export interface Definition extends HttpOptions {
-  name: string;
-  description: string;
-}
+import {
+  Definition,
+  HttpOptions,
+  StringMap,
+} from "../lib/index";
 
 interface Options {
   definitions: Definition[];

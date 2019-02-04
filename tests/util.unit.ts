@@ -3,7 +3,7 @@ import { assert } from "chai";
 import {
   toSecretName,
   replaceSecrets,
-} from "../lib/util";
+} from "../generate/util";
 
 describe("Util", () => {
   describe("toSecretName", () => {

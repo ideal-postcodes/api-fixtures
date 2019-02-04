@@ -1,13 +1,19 @@
 import { assert } from "chai";
 
 import {
-  toString,
   HttpOptions,
+} from "../lib/index";
+
+import {
+  toString,
   HttpResponse,
   HttpAgent,
   Resource,
-  Definition,
-} from "../lib/resource";
+} from "../generate/resource";
+
+import {
+  Definition, 
+} from "../lib/index";
 
 const HTTP_SUCCESS = 200;
 
