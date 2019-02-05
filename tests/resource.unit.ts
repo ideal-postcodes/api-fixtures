@@ -1,27 +1,27 @@
 import { assert } from "chai";
 
 import {
-  HttpOptions,
-} from "../lib/index";
-
-import {
-  toString,
-  HttpResponse,
-  HttpAgent,
   Resource,
+  toString,
 } from "../generate/resource";
 
 import {
+  HttpAgent,
+  Fixture,
+} from "../generate/index";
+
+import {
   Definition, 
+  HttpOptions,
 } from "../lib/index";
 
 const HTTP_SUCCESS = 200;
 
-const genHttpAgent = (definition: Definition, body: any): HttpAgent => {
+const genHttpAgent = (body: {}): HttpAgent => {
   return options => {
     return new Promise((resolve, reject) => {
       const httpStatus = HTTP_SUCCESS;
-      resolve({ body, httpStatus, definition });
+      resolve({ body, httpStatus });
     });
   };
 };
@@ -53,7 +53,7 @@ describe("Resource", () => {
       url: "/test/url/<FOO>",
     };
 
-    const httpAgent = genHttpAgent(definition, body);
+    const httpAgent = genHttpAgent(body);
     resource = new Resource({ httpAgent, definitions: [definition], secrets });
   });
 
@@ -85,7 +85,7 @@ describe("Resource", () => {
 
   describe("toString", () => {
     it ("writes a HttpFixture to ES6 string representation", () => {
-      const fixture: HttpResponse = {
+      const fixture: Fixture = {
         body: { foo: "bar", baz: ["8"] },
         httpStatus: 200,
         definition: {

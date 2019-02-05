@@ -1,32 +1,15 @@
-import {
-  Secrets,
-  replaceSecrets,
-} from "./util";
+import { Secrets, replaceSecrets } from "./util";
 
-import {
-  format,
-} from "prettier";
+import { format } from "prettier";
 
-import {
-  Definition,
-  HttpOptions,
-  StringMap,
-} from "../lib/index";
+import { Definition, HttpOptions, StringMap } from "../lib/index";
+
+import { HttpAgent, Fixture } from "./index";
 
 interface Options {
   definitions: Definition[];
   httpAgent: HttpAgent;
   secrets: Secrets;
-}
-
-export interface HttpResponse {
-  httpStatus: number;
-  body: any;
-  definition: Definition;
-}
-
-export interface HttpAgent {
-  (request: HttpOptions): Promise<HttpResponse>;
 }
 
 /**
@@ -61,12 +44,14 @@ export class Resource {
 
       // Replace query object
       if (query !== undefined) {
-        Object.keys(query).forEach(key => query[key] = replace(query[key]));
+        Object.keys(query).forEach(key => (query[key] = replace(query[key])));
       }
 
       // Replace headers object
       if (headers !== undefined) {
-        Object.keys(headers).forEach(key => headers[key] = replace(headers[key]));
+        Object.keys(headers).forEach(
+          key => (headers[key] = replace(headers[key]))
+        );
       }
     });
   }
@@ -76,9 +61,16 @@ export class Resource {
    *
    * Retrieves data from live API via HTTP agent for all endpoint definitions
    */
-  public generateFixtures(): Promise<HttpResponse[]> {
+  public generateFixtures(): Promise<Fixture[]> {
     const requests = this.definitions.map(def => this.httpAgent({ ...def }));
-    return Promise.all(requests);
+    const results = [];
+    return Promise.all(requests)
+      .then(responses => {
+        return responses.map((response, i) => {
+          const definition = this.definitions[i];
+          return { ...response, definition };
+        });
+      });
   }
 }
 
@@ -88,9 +80,9 @@ const toJson = (o: {}): string => JSON.stringify(o, null, DEFAULT_SPACING);
 /**
  * toString
  *
- * Writes a fixture HttpResponse to string
+ * Writes a fixture Fixture to string
  */
-export const toString = (fixture: HttpResponse): string => {
+export const toString = (fixture: Fixture): string => {
   const parser = "typescript";
   const { definition } = fixture;
   const result = `
@@ -103,6 +95,6 @@ export const toString = (fixture: HttpResponse): string => {
       body: ${toJson(fixture.body)}
     };
   `;
-        return format(result, { parser });
-}
+  return format(result, { parser });
+};
 

@@ -1,6 +1,6 @@
 import { assert } from "chai";
-
 import { fixtures } from "../lib/index"
+
 const {
   postcodes,
   addresses,

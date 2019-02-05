@@ -23,7 +23,7 @@ export interface HttpOptions {
   query?: StringMap;
   headers?: StringMap;
   method?: string;
-  body?: {};
+  body?: object;
 }
 
 export interface StringMap {
