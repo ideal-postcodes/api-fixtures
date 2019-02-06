@@ -1,4 +1,6 @@
+import { Fixture } from "../generate/index";
 import { StringMap } from "../lib/index";
+import { format } from "prettier";
 import { config } from "dotenv";
 import { resolve } from "path";
 
@@ -44,4 +46,28 @@ export const loadSecrets = (directory: string): Secrets => {
   if (error) throw error;
   return toSecrets(parsed);
 }
+
+const DEFAULT_SPACING = 2;
+const toJson = (o: {}): string => JSON.stringify(o, null, DEFAULT_SPACING);
+
+/**
+ * toString
+ *
+ * Writes a fixture Fixture to string
+ */
+export const toString = (fixture: Fixture): string => {
+  const parser = "typescript";
+  const { definition } = fixture;
+  const result = `
+    export const payload = {
+      description: "${definition.description}",
+      url: "${definition.url}",
+      query: ${toJson(definition.query || {})},
+      headers: ${toJson(definition.headers || {})},
+      httpStatus: ${fixture.httpStatus},
+      body: ${toJson(fixture.body)}
+    };
+  `;
+  return format(result, { parser });
+};
 

@@ -1,15 +1,9 @@
 import { assert } from "chai";
-
-import {
-  Resource,
-  toString,
-} from "../generate/resource";
-
+import { Resource } from "../generate/resource";
 import {
   HttpAgent,
   Fixture,
 } from "../generate/index";
-
 import {
   Definition, 
   HttpOptions,
@@ -82,38 +76,5 @@ describe("Resource", () => {
       assert.equal(fixture.httpStatus, HTTP_SUCCESS);
     });
   });
-
-  describe("toString", () => {
-    it ("writes a HttpFixture to ES6 string representation", () => {
-      const fixture: Fixture = {
-        body: { foo: "bar", baz: ["8"] },
-        httpStatus: 200,
-        definition: {
-          name: "Foo",
-          description: "description",
-          query: {
-            api_key: "foo"
-          },
-          url: "/v1/foo",
-        }
-      };
-      const expected = `export const payload = {
-  description: "description",
-  url: "/v1/foo",
-  query: {
-    api_key: "foo"
-  },
-  headers: {},
-  httpStatus: 200,
-  body: {
-    foo: "bar",
-    baz: ["8"]
-  }
-};
-`;
-      assert.equal(expected, toString(fixture));
-    });
-  });
 });
-
 

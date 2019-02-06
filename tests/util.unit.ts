@@ -1,10 +1,11 @@
 import { assert } from "chai";
 import { resolve } from "path";
-
+import { Fixture } from "../generate/index";
 import {
   toSecretName,
   replaceSecrets,
   loadSecrets,
+  toString,
 } from "../generate/util";
 
 describe("Util", () => {
@@ -40,4 +41,37 @@ describe("Util", () => {
       assert.equal(result, expected);
     });
   });
+
+  describe("toString", () => {
+    it ("writes a HttpFixture to ES6 string representation", () => {
+      const fixture: Fixture = {
+        body: { foo: "bar", baz: ["8"] },
+        httpStatus: 200,
+        definition: {
+          name: "Foo",
+          description: "description",
+          query: {
+            api_key: "foo"
+          },
+          url: "/v1/foo",
+        }
+      };
+      const expected = `export const payload = {
+  description: "description",
+  url: "/v1/foo",
+  query: {
+    api_key: "foo"
+  },
+  headers: {},
+  httpStatus: 200,
+  body: {
+    foo: "bar",
+    baz: ["8"]
+  }
+};
+`;
+      assert.equal(expected, toString(fixture));
+    });
+  });
 });
+
