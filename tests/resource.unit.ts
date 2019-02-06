@@ -25,6 +25,7 @@ describe("Resource", () => {
   let secrets: Map<string, string>;
   let body: any;
   let definition: Definition;
+  let httpAgent: HttpAgent;
 
   beforeEach(() => {
     secrets = new Map([
@@ -47,7 +48,7 @@ describe("Resource", () => {
       url: "/test/url/<FOO>",
     };
 
-    const httpAgent = genHttpAgent(body);
+    httpAgent = genHttpAgent(body);
     resource = new Resource({ httpAgent, definitions: [definition], secrets });
   });
 
@@ -65,6 +66,18 @@ describe("Resource", () => {
         assert.equal(query.query, "BAR");
       }
       assert.equal(def.url, "/test/url/secretfoo");
+    });
+
+    it ("permits undefined headers and querystring in definitions", () => {
+      const definitions: Definition[] = [{
+        name: "Foo",
+        description: "Bar",
+        url: "/test"
+      }];
+      const resource = new Resource({ definitions, httpAgent, secrets });
+      const definition = resource.definitions[0];
+      assert.isUndefined(definition.query);
+      assert.isUndefined(definition.headers);
     });
   });
 
