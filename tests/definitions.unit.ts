@@ -6,12 +6,14 @@ import postcodes from "../generate/definitions/postcodes";
 import addresses from "../generate/definitions/addresses";
 import autocomplete from "../generate/definitions/autocomplete";
 import keys from "../generate/definitions/keys";
+import udprn from "../generate/definitions/udprn";
 
 const resources: Definition[][] = [
   postcodes,
   addresses,
   autocomplete,
   keys,
+  udprn,
 ];
 
 const isDefinition = (definition: Definition): void => {

@@ -11,6 +11,7 @@ import postcodes from "../generate/definitions/postcodes";
 import addresses from "../generate/definitions/addresses";
 import autocomplete from "../generate/definitions/autocomplete";
 import keys from "../generate/definitions/keys";
+import udprn from "../generate/definitions/udprn";
 
 interface ResourceDefinition {
   [key: string]: Definition[];
@@ -21,6 +22,7 @@ const resourceDefinitions: ResourceDefinition = {
   addresses,
   autocomplete,
   keys,
+  udprn,
 };
 
 const BASE_DIR = resolve(__dirname, "../");
