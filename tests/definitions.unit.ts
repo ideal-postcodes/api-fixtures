@@ -4,10 +4,12 @@ import { Definition } from "../lib/index";
 // Import definitions
 import postcodes from "../generate/definitions/postcodes";
 import addresses from "../generate/definitions/addresses";
+import autocomplete from "../generate/definitions/autocomplete";
 
 const resources: Definition[][] = [
   postcodes,
   addresses,
+  autocomplete,
 ];
 
 const isDefinition = (definition: Definition): void => {

@@ -9,6 +9,7 @@ import { writeFileSync } from "fs";
 // Import definitions
 import postcodes from "../generate/definitions/postcodes";
 import addresses from "../generate/definitions/addresses";
+import autocomplete from "../generate/definitions/autocomplete";
 
 
 interface ResourceDefinition {
@@ -18,6 +19,7 @@ interface ResourceDefinition {
 const resourceDefinitions: ResourceDefinition = {
   postcodes,
   addresses,
+  autocomplete,
 };
 
 const BASE_DIR = resolve(__dirname, "../");
