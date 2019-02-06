@@ -1,4 +1,3 @@
-
 import { assert } from "chai";
 import nock from "nock";
 import { httpAgent } from "../generate/http_agent";

@@ -7,7 +7,7 @@ export const payload = {
   headers: {},
   httpStatus: 404,
   body: {
-    "code": 4040,
-    "message": "Postcode Not Found"
+    code: 4040,
+    message: "Postcode Not Found"
   }
-}
+};
