@@ -8,12 +8,17 @@ import { writeFileSync } from "fs";
 
 // Import definitions
 import postcodes from "../generate/definitions/postcodes";
+import addresses from "../generate/definitions/addresses";
+
 
 interface ResourceDefinition {
   [key: string]: Definition[];
 }
 
-const resourceDefinitions: ResourceDefinition = { postcodes };
+const resourceDefinitions: ResourceDefinition = {
+  postcodes,
+  addresses,
+};
 
 const BASE_DIR = resolve(__dirname, "../");
 const FIXTURES_DIR = resolve(__dirname, "../lib/fixtures");

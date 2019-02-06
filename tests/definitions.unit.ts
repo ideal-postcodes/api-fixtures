@@ -3,6 +3,12 @@ import { Definition } from "../lib/index";
 
 // Import definitions
 import postcodes from "../generate/definitions/postcodes";
+import addresses from "../generate/definitions/addresses";
+
+const resources: Definition[][] = [
+  postcodes,
+  addresses,
+];
 
 const isDefinition = (definition: Definition): void => {
   assert.isDefined(definition.name);
@@ -12,9 +18,9 @@ const isDefinition = (definition: Definition): void => {
 };
 
 describe("Resource definitions", () => {
-  describe("postcodes", () => {
-    it("exports definitions", () => {
-      postcodes.forEach(isDefinition);
+  it("are exported", () => {
+    resources.forEach(definitions => {
+      definitions.forEach(isDefinition);
     });
   });
 });

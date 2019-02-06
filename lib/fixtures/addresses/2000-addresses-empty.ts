@@ -1,21 +1,20 @@
 export const payload = {
   description: "Address query with no results",
-  url: "/v1/addresses?api_key=<VALID_API_KEY>&q=bakirkoy",
+  url: "/v1/addresses",
   query: {
-    api_key: "<VALID_API_KEY>"
+    api_key: "<VALID_MR_API_KEY>",
+    query: "bakirkoy"
   },
   headers: {},
   httpStatus: 200,
   body: {
-    "code": 2000,
-    "message": "Success",
-    "results": [
-      {
-        "total": 0,
-        "limit": 10,
-        "page":	0,
-        "hits": []
-      }
-    ]
+    result: {
+      total: 0,
+      limit: 10,
+      page: 0,
+      hits: []
+    },
+    code: 2000,
+    message: "Success"
   }
-}
+};
