@@ -1,6 +1,7 @@
 import { Secrets, replaceSecrets } from "./util";
 import { Definition, HttpOptions, StringMap } from "../lib/index";
 import { HttpAgent, Fixture } from "./index";
+import { cloneDeep } from "lodash";
 
 interface Options {
   definitions: Definition[];
@@ -22,7 +23,7 @@ export class Resource {
 
   constructor(options: Options) {
     const { definitions, httpAgent, secrets } = options;
-    this.definitions = definitions;
+    this.definitions = cloneDeep(definitions);
     this.httpAgent = httpAgent;
     this.loadSecrets(secrets);
   }

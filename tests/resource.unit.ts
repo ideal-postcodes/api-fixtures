@@ -71,7 +71,7 @@ describe("Resource", () => {
   describe("generateFixtures", () => {
     it ("produces a fixtures output", async () => {
       const [fixture] = await resource.generateFixtures();
-      assert.deepEqual(fixture.definition, definition);
+      assert.deepEqual(fixture.definition, resource.definitions[0]);
       assert.deepEqual(fixture.body, body);
       assert.equal(fixture.httpStatus, HTTP_SUCCESS);
     });
