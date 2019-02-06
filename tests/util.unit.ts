@@ -1,11 +1,25 @@
 import { assert } from "chai";
+import { resolve } from "path";
 
 import {
   toSecretName,
   replaceSecrets,
+  loadSecrets,
 } from "../generate/util";
 
 describe("Util", () => {
+  describe("loadSecrets", () => {
+    it ("loads .env secrets from path", () => {
+      const path = resolve(__dirname);
+      const secrets = loadSecrets(path);
+      assert.equal(secrets.get("FOO"), "bar");
+    });
+
+    it ("throws an error if invalid path", () => {
+      assert.throws(() => loadSecrets("foo"));
+    });
+  });
+
   describe("toSecretName", () => {
     it ("converts placeholder to secret name", () => {
       const placeholder = "<FOO>";
