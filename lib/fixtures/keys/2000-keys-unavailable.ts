@@ -5,10 +5,10 @@ export const payload = {
   headers: {},
   httpStatus: 200,
   body: {
-    "result": {
-      "available": false
+    result: {
+      available: false
     },
-    "code": 2000,
-    "message": "success"
+    code: 2000,
+    message: "Success"
   }
 };

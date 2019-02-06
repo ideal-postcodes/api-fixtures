@@ -5,7 +5,7 @@ export const payload = {
   headers: {},
   httpStatus: 404,
   body: {
-    "code": 4042,
-    "message": "Key not found"
+    code: 4042,
+    message: "Key not found"
   }
 };

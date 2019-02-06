@@ -10,7 +10,7 @@ import { writeFileSync } from "fs";
 import postcodes from "../generate/definitions/postcodes";
 import addresses from "../generate/definitions/addresses";
 import autocomplete from "../generate/definitions/autocomplete";
-
+import keys from "../generate/definitions/keys";
 
 interface ResourceDefinition {
   [key: string]: Definition[];
@@ -20,6 +20,7 @@ const resourceDefinitions: ResourceDefinition = {
   postcodes,
   addresses,
   autocomplete,
+  keys,
 };
 
 const BASE_DIR = resolve(__dirname, "../");
@@ -46,7 +47,7 @@ const main = async () => {
       write(fixture, resourceName); 
     });
   }
-}
+};
 
 main();
 
