@@ -7,6 +7,7 @@ import addresses from "../generate/definitions/addresses";
 import autocomplete from "../generate/definitions/autocomplete";
 import keys from "../generate/definitions/keys";
 import udprn from "../generate/definitions/udprn";
+import umprn from "../generate/definitions/umprn";
 
 const resources: Definition[][] = [
   postcodes,
@@ -14,6 +15,7 @@ const resources: Definition[][] = [
   autocomplete,
   keys,
   udprn,
+  umprn,
 ];
 
 const isDefinition = (definition: Definition): void => {
