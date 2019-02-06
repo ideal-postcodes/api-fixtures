@@ -20,7 +20,8 @@
   },
   "nyc": {
     "include": [
-      "lib/**/*.ts"
+      "lib/**/*.ts",
+      "generate/**/*.ts"
     ],
     "exclude": [
       "dist/*",
