@@ -1,4 +1,48 @@
 /**
+ * Fixture
+ *
+ * Represents the essential data returned by an api.ideal-postcodes.co.uk (via `body` and `httpStatus` as well as the HTTP request used to retrieve the data (e.g. `url`, `query`)
+ *
+ * Note, secrets are redacted and added back in via environment variables when the fixtures are generated
+ */
+export interface Fixture {
+  /**
+   * Basic description of request
+   */
+  description: string;
+
+  /**
+   * url of request (relative to https://api.ideal-postcodes.co.uk/)
+   */
+  url: string;
+
+  /**
+   * HTTP request query string
+   */
+  query?: StringMap;
+
+  /**
+   * HTTP request headers
+   */
+  headers?: StringMap;
+
+  /**
+   * HTTP Method. Defaults to GET if not defined
+   */
+  method?: string;
+
+  /**
+   * JSON body of API Response
+   */
+  body?: any;
+
+  /**
+   * HTTP Status of API Response
+   */
+  httpStatus: number;
+}
+
+/**
  * Definition
  *
  * @hidden
@@ -83,8 +127,8 @@ export const autocomplete = {
  * Define Keys Fixtures
  */
 import { payload as ke_available } from "./fixtures/keys/2000-keys";
-import { payload as ke_unavailable } from "./fixtures/keys/2000-keys-unavailable"
-import { payload as ke_invalid } from "./fixtures/keys/4042-keys-invalid"
+import { payload as ke_unavailable } from "./fixtures/keys/2000-keys-unavailable";
+import { payload as ke_invalid } from "./fixtures/keys/4042-keys-invalid";
 
 export const keys = {
   check: {
@@ -120,7 +164,7 @@ export const umprn = {
  * Define Error Fixtures
  */
 import { payload as er_invalidKey } from "./fixtures/errors/4010";
-import { payload as er_invalidUrl  } from "./fixtures/errors/4011";
+import { payload as er_invalidUrl } from "./fixtures/errors/4011";
 import { payload as er_balanceDepleted } from "./fixtures/errors/4020";
 import { payload as er_limitReached } from "./fixtures/errors/4021";
 
@@ -141,4 +185,3 @@ export const fixtures = {
   umprn,
   errors,
 };
-

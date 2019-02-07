@@ -2,7 +2,45 @@
 
 # Ideal Postcodes HTTP API Fixtures
 
-## Usage
+This javascript library contains HTTP API fixtures for api.ideal-postcodes.co.uk, which can be readily imported as objects for test stubbing
+
+Automatically generated documentation can be found at: [https://ideal-postcodes.github.io/api-fixtures/](https://ideal-postcodes.github.io/api-fixtures/)
+
+## Available Fixtures
+
+- `postcodes`
+  - `success`
+  - `notFound`
+  - `multipleResidence`
+    - `success`
+- `addresses`
+  - `success`
+  - `empty`
+  - `multipleResidence`
+    - `success`
+- `autocomplete`
+  - `success`
+  - `empty`
+  - `multipleResidence`
+    - `success`
+- `keys`
+  - `available`
+  - `unavailble`
+  - `invalid`
+- `udprn`
+  - `success`
+  - `notFound`
+- `umprn`
+  - `success`
+  - `notFound`
+- `errors`
+  - `invalidKey`
+  - `invalidUrl`
+  - `balanceDepleted`
+  - `dailyLimitReached`
+  - `dailyIpRateLimitReached`
+
+## Example Usage
 
 ```bash
 npm install @ideal-postcodes/api-fixtures
@@ -10,6 +48,8 @@ npm install @ideal-postcodes/api-fixtures
 
 ```javascript
 import { fixtures } from "api-fixtures";
+
+// Example for Postcodes->success
 
 console.log(fixtures.postcodes.success);
 
