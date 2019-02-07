@@ -92,10 +92,6 @@ export const keys = {
     unavailable: ke_unavailable,
     invalid: ke_invalid,
   },
-  details: {
-    success: {},
-    notFound: {},
-  }
 };
 
 /**
@@ -145,3 +141,4 @@ export const fixtures = {
   umprn,
   errors,
 };
+
