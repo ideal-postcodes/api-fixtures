@@ -6,6 +6,10 @@ import { resolve } from "path";
 import { Definition } from "../lib/index";
 import { writeFileSync } from "fs";
 
+interface ResourceDefinition {
+  [key: string]: Definition[];
+}
+
 // Import definitions
 import postcodes from "../generate/definitions/postcodes";
 import addresses from "../generate/definitions/addresses";
@@ -13,10 +17,7 @@ import autocomplete from "../generate/definitions/autocomplete";
 import keys from "../generate/definitions/keys";
 import udprn from "../generate/definitions/udprn";
 import umprn from "../generate/definitions/umprn";
-
-interface ResourceDefinition {
-  [key: string]: Definition[];
-}
+import errors from "../generate/definitions/errors";
 
 const resourceDefinitions: ResourceDefinition = {
   postcodes,
@@ -25,14 +26,13 @@ const resourceDefinitions: ResourceDefinition = {
   keys,
   udprn,
   umprn,
+  errors,
 };
 
 const BASE_DIR = resolve(__dirname, "../");
 const FIXTURES_DIR = resolve(__dirname, "../lib/fixtures");
 
-const resourceNames = Object.keys(resourceDefinitions);
 const secrets = loadSecrets(BASE_DIR);
-
 
 const write = (fixture: Fixture, resourceName: string): void => {
   const { name } = fixture.definition;
@@ -41,6 +41,7 @@ const write = (fixture: Fixture, resourceName: string): void => {
 };
 
 const main = async () => {
+  const resourceNames = Object.keys(resourceDefinitions);
   for (const resourceName of resourceNames) {
     const definitions = resourceDefinitions[resourceName];
     const resource = new Resource({ definitions, httpAgent, secrets });

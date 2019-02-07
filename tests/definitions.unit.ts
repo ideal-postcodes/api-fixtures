@@ -8,6 +8,7 @@ import autocomplete from "../generate/definitions/autocomplete";
 import keys from "../generate/definitions/keys";
 import udprn from "../generate/definitions/udprn";
 import umprn from "../generate/definitions/umprn";
+import errors from "../generate/definitions/errors";
 
 const resources: Definition[][] = [
   postcodes,
@@ -16,6 +17,7 @@ const resources: Definition[][] = [
   keys,
   udprn,
   umprn,
+  errors,
 ];
 
 const isDefinition = (definition: Definition): void => {
@@ -32,3 +34,4 @@ describe("Resource definitions", () => {
     });
   });
 });
+
