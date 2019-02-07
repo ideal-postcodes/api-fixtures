@@ -1,3 +1,6 @@
+/**
+ * @hidden
+ */
 export const payload = {
   description: "Empty autocomplete request",
   url: "/v1/autocomplete/addresses",

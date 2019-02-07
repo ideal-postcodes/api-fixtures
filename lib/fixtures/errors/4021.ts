@@ -1,3 +1,6 @@
+/**
+ * @hidden
+ */
 export const payload = {
   description:
     "Limit reached on key. Can apply to daily key limit or daily IP limit",

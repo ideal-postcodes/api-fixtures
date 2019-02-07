@@ -1,3 +1,6 @@
+/**
+ * @hidden
+ */
 export const payload = {
   description: "Invalid API Key presented",
   url: "/v1/postcodes/WC1A2SE",

@@ -1,3 +1,6 @@
+/**
+ * @hidden
+ */
 export const payload = {
   description: "UMPRN address retrieval",
   url: "/v1/umprn/50906066",

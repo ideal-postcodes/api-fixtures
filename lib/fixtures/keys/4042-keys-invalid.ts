@@ -1,3 +1,6 @@
+/**
+ * @hidden
+ */
 export const payload = {
   description: "Key does not exist",
   url: "/v1/keys/foo",

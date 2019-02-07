@@ -1,3 +1,6 @@
+/**
+ * @hidden
+ */
 export const payload = {
   description: "UMPRN does not exist",
   url: "/v1/umprn/56908329",

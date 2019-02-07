@@ -1,3 +1,6 @@
+/**
+ * @hidden
+ */
 export const payload = {
   description: "Request not on URL whitelist",
   url: "/v1/postcodes/WC1A2SE",

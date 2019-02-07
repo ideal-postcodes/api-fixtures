@@ -1,3 +1,6 @@
+/**
+ * @hidden
+ */
 export const payload = {
   description: "Unavailable API Key",
   url: "/v1/keys/idkfa",

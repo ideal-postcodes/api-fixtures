@@ -1,3 +1,6 @@
+/**
+ * @hidden
+ */
 export const payload = {
   description: "Valid autocomplete request with Multiple Residence data",
   url: "/v1/autocomplete/addresses",

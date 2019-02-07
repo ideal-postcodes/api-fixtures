@@ -1,3 +1,6 @@
+/**
+ * @hidden
+ */
 export const payload = {
   description:
     "Successful postcode resolution request with Multiple Residence enabled",

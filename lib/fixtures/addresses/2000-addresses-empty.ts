@@ -1,3 +1,6 @@
+/**
+ * @hidden
+ */
 export const payload = {
   description: "Address query with no results",
   url: "/v1/addresses",

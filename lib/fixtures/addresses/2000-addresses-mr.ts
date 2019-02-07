@@ -1,3 +1,6 @@
+/**
+ * @hidden
+ */
 export const payload = {
   description: "Valid Multiple Residence address query",
   url: "/v1/addresses",

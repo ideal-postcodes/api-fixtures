@@ -1,3 +1,6 @@
+/**
+ * @hidden
+ */
 export const payload = {
   description: "Requested postcode does not exist",
   url: "/v1/postcodes/FOO",

@@ -1,3 +1,6 @@
+/**
+ * @hidden
+ */
 export const payload = {
   description: "Successful postcode resolution request",
   url: "/v1/postcodes/SW1A2AA",

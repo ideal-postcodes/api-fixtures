@@ -1,3 +1,6 @@
+/**
+ * @hidden
+ */
 export const payload = {
   description: "Available API Key",
   url: "/v1/keys/iddqd",

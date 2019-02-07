@@ -1,3 +1,6 @@
+/**
+ * @hidden
+ */
 export const payload = {
   description: "Balance depleted",
   url: "/v1/postcodes/W22LG",
