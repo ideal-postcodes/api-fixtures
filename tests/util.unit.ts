@@ -51,6 +51,9 @@ describe("Util", () => {
         query: {
           api_key: "foo"
         },
+        headers: {
+          baz: "quux"
+        },
         url: "/v1/foo",
       };
 
@@ -65,7 +68,9 @@ describe("Util", () => {
   query: {
     api_key: "foo"
   },
-  headers: {},
+  headers: {
+    baz: "quux"
+  },
   httpStatus: 200,
   body: {
     foo: "bar",
@@ -75,6 +80,32 @@ describe("Util", () => {
 `;
       assert.equal(expected, toString(fixture, definition));
     });
+  });
+  it ("writes default values for query and headers", () => {
+    const definition: Definition = {
+      name: "Foo",
+      description: "description",
+      url: "/v1/foo",
+    };
+
+    const fixture: HttpResponse = {
+      body: { foo: "bar", baz: ["8"] },
+      httpStatus: 200,
+    };
+
+    const expected = `export const payload = {
+  description: "description",
+  url: "/v1/foo",
+  query: {},
+  headers: {},
+  httpStatus: 200,
+  body: {
+    foo: "bar",
+    baz: ["8"]
+  }
+};
+`;
+    assert.equal(expected, toString(fixture, definition));
   });
 });
 
