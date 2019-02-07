@@ -3,6 +3,9 @@ node_modules
 lib
 docs
 tests
+generate
+bin
+.circleci
 
 # Typescript
 **/tsconfig.json
