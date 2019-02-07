@@ -11,26 +11,26 @@ import {
 
 describe("Util", () => {
   describe("loadSecrets", () => {
-    it ("loads .env secrets from path", () => {
+    it("loads .env secrets from path", () => {
       const path = resolve(__dirname);
       const secrets = loadSecrets(path);
       assert.equal(secrets.get("FOO"), "bar");
     });
 
-    it ("throws an error if invalid path", () => {
+    it("throws an error if invalid path", () => {
       assert.throws(() => loadSecrets("foo"));
     });
   });
 
   describe("toSecretName", () => {
-    it ("converts placeholder to secret name", () => {
+    it("converts placeholder to secret name", () => {
       const placeholder = "<FOO>";
       assert.equal(toSecretName(placeholder), "FOO");
     });
   });
 
   describe("replaceSecrets", () => {
-    it ("replaces placeholder with secrets in string", () => {
+    it("replaces placeholder with secrets in string", () => {
       const secrets: Map<string, string> = new Map([
         ["FOO", "foo"],
         ["BAR", "bar1"],
@@ -44,15 +44,15 @@ describe("Util", () => {
   });
 
   describe("toString", () => {
-    it ("writes a HttpFixture to ES6 string representation", () => {
+    it("writes a HttpFixture to ES6 string representation", () => {
       const definition: Definition = {
         name: "Foo",
         description: "description",
         query: {
-          api_key: "foo"
+          api_key: "foo",
         },
         headers: {
-          baz: "quux"
+          baz: "quux",
         },
         url: "/v1/foo",
       };
@@ -62,7 +62,10 @@ describe("Util", () => {
         httpStatus: 200,
       };
 
-      const expected = `export const payload = {
+      const expected = `/**
+ * @hidden
+ */
+export const payload = {
   description: "description",
   url: "/v1/foo",
   query: {
@@ -81,7 +84,7 @@ describe("Util", () => {
       assert.equal(expected, toString(fixture, definition));
     });
   });
-  it ("writes default values for query and headers", () => {
+  it("writes default values for query and headers", () => {
     const definition: Definition = {
       name: "Foo",
       description: "description",
@@ -93,7 +96,10 @@ describe("Util", () => {
       httpStatus: 200,
     };
 
-    const expected = `export const payload = {
+    const expected = `/**
+ * @hidden
+ */
+export const payload = {
   description: "description",
   url: "/v1/foo",
   query: {},
@@ -108,4 +114,3 @@ describe("Util", () => {
     assert.equal(expected, toString(fixture, definition));
   });
 });
-

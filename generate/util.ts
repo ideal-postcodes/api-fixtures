@@ -15,7 +15,7 @@ export const toSecretName = (placeholder: string): string => {
  * replaceSecrets
  *
  * Replaces occurences of a secret placeholder with secret value
- * 
+ *
  * E.g. where FOO=foo,BAR=bar
  * "<FOO> something<BAR>else" => "foo somethingbarelse"
  */
@@ -42,10 +42,10 @@ const toSecrets = (obj: StringMap): Secrets => {
 // @throws if not found
 export const loadSecrets = (directory: string): Secrets => {
   const path = resolve(directory, ".env");
-  const { error, parsed={} } = config({ path });
+  const { error, parsed = {} } = config({ path });
   if (error) throw error;
   return toSecrets(parsed);
-}
+};
 
 const DEFAULT_SPACING = 2;
 const toJson = (o: {}): string => JSON.stringify(o, null, DEFAULT_SPACING);
@@ -55,8 +55,14 @@ const toJson = (o: {}): string => JSON.stringify(o, null, DEFAULT_SPACING);
  *
  * Writes a fixture Fixture to string
  */
-export const toString = (fixture: HttpResponse, definition: Definition): string => {
+export const toString = (
+  fixture: HttpResponse,
+  definition: Definition
+): string => {
   const result = `
+    /**
+     * @hidden
+     */
     export const payload = {
       description: "${definition.description}",
       url: "${definition.url}",
@@ -69,4 +75,3 @@ export const toString = (fixture: HttpResponse, definition: Definition): string 
   const parser = "typescript";
   return format(result, { parser });
 };
-
