@@ -15,7 +15,7 @@
     "coverage": "node_modules/.bin/nyc report --reporter=text-lcov | node_modules/.bin/coveralls || true",
     "generate": "node_modules/.bin/ts-node bin/generate.ts && npm run test",
     "docs": "./node_modules/.bin/typedoc --mode file --target ES3 --out docs/ --name 'Ideal Postcodes API Fixtures' --theme minimal --excludePrivate --hideGenerator --excludeExternals lib/",
-    "prepare": "npm run build"
+    "prepare": "npm run test && npm run build"
   },
   "prettier": {
     "trailingComma": "es5"
