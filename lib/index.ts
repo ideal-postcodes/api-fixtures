@@ -8,6 +8,7 @@ import { errors } from "./fixtures/errors";
 
 /**
  * Definition
+ *
  * @hidden
  *
  * Resource definitions. Describes an endpoint as well as how to extract
@@ -18,6 +19,11 @@ export interface Definition extends HttpOptions {
   description: string;
 }
 
+/**
+ * HttpOptions
+ *
+ * @hidden
+ */
 export interface HttpOptions {
   url: string;
   query?: StringMap;
@@ -26,6 +32,11 @@ export interface HttpOptions {
   body?: object;
 }
 
+/**
+ * StringMap
+ *
+ * @hidden
+ */
 export interface StringMap {
   [key: string]: string;
 }
@@ -39,4 +50,3 @@ export const fixtures = {
   umprn,
   errors,
 };
-

@@ -69,5 +69,7 @@ console.log(fixtures.postcodes.success);
 
 ## License
 
-MIT
+Code is MIT
+
+Data provided by API is for testing and integration purposes only for PAF Products
 
