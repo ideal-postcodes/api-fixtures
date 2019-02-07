@@ -27,7 +27,8 @@
     ],
     "exclude": [
       "dist/*",
-      "**/*.d.ts"
+      "**/*.d.ts",
+      "generate/index.ts"
     ],
     "extension": [
       ".ts",
