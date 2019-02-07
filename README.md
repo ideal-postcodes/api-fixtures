@@ -2,9 +2,13 @@
 
 # Ideal Postcodes HTTP API Fixtures
 
-This javascript library contains HTTP API fixtures for api.ideal-postcodes.co.uk, which can be readily imported as objects for test stubbing
+This javascript library provides HTTP API response data for api.ideal-postcodes.co.uk. This data is exported as `Fixture` objects, containing a JSON response body (`body`) and HTTP Status Code (`httpStatus`).
+
+These test objects may be readily imported into a test suite to stub out test methods or API requests.
 
 Automatically generated documentation can be found at: [https://ideal-postcodes.github.io/api-fixtures/](https://ideal-postcodes.github.io/api-fixtures/)
+
+Fixture object defition can be found [here](https://ideal-postcodes.github.io/api-fixtures/interfaces/fixture.html)
 
 ## Available Fixtures
 
