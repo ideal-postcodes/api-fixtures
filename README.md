@@ -6,43 +6,9 @@ This javascript library provides HTTP API response data for api.ideal-postcodes.
 
 These test objects may be readily imported into a test suite to stub out test methods or API requests.
 
-Automatically generated documentation can be found at: [https://ideal-postcodes.github.io/api-fixtures/](https://ideal-postcodes.github.io/api-fixtures/)
+Automatically generated documentation which outlines available fixtures can be found at: [https://ideal-postcodes.github.io/api-fixtures/](https://ideal-postcodes.github.io/api-fixtures/)
 
 Fixture object defition can be found [here](https://ideal-postcodes.github.io/api-fixtures/interfaces/fixture.html)
-
-## Available Fixtures
-
-- `postcodes`
-  - `success`
-  - `notFound`
-  - `multipleResidence`
-    - `success`
-- `addresses`
-  - `success`
-  - `empty`
-  - `multipleResidence`
-    - `success`
-- `autocomplete`
-  - `success`
-  - `empty`
-  - `multipleResidence`
-    - `success`
-- `keys`
-  - `available`
-  - `unavailble`
-  - `invalid`
-- `udprn`
-  - `success`
-  - `notFound`
-- `umprn`
-  - `success`
-  - `notFound`
-- `errors`
-  - `invalidKey`
-  - `invalidUrl`
-  - `balanceDepleted`
-  - `dailyLimitReached`
-  - `dailyIpRateLimitReached`
 
 ## Example Usage
 
@@ -51,7 +17,10 @@ npm install @ideal-postcodes/api-fixtures
 ```
 
 ```javascript
-import { postcodes } from "api-fixtures";
+import { postcodes } from "@ideal-postcodes/api-fixtures";
+
+// or 
+// const { postcodes } = require("@ideal-postcodes/api-fixtures");
 
 // Example for postcodes->success
 
