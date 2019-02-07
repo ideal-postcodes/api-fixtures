@@ -12,7 +12,7 @@ export interface Fixture {
   description: string;
 
   /**
-   * url of request (relative to https://api.ideal-postcodes.co.uk/)
+   * URL of request (relative to https://api.ideal-postcodes.co.uk/)
    */
   url: string;
 
@@ -86,7 +86,7 @@ import { payload as pc_notFound } from "./fixtures/postcodes/4040-postcodes";
 import { payload as pc_mrSuccess } from "./fixtures/postcodes/2000-postcodes-mr";
 
 /**
- * API Requests returned by the `/postcodes` API
+ * API responses returned by the `/postcodes` API
  */
 export const postcodes = {
   /**
@@ -116,7 +116,7 @@ import { payload as ad_empty } from "./fixtures/addresses/2000-addresses-empty";
 import { payload as ad_mrSuccess } from "./fixtures/addresses/2000-addresses-mr";
 
 /**
- * API Requests returned by the `/addresses` API
+ * API responses returned by the `/addresses` API
  */
 export const addresses = {
   /**
@@ -146,7 +146,7 @@ import { payload as au_empty } from "./fixtures/autocomplete/2000-autocomplete-e
 import { payload as au_mrSuccess } from "./fixtures/autocomplete/2000-autocomplete-mr";
 
 /**
- * API Requests returned by the `/autocomplete` API
+ * API responses returned by the `/autocomplete` API
  */
 export const autocomplete = {
   /**
@@ -176,7 +176,7 @@ import { payload as ke_unavailable } from "./fixtures/keys/2000-keys-unavailable
 import { payload as ke_invalid } from "./fixtures/keys/4042-keys-invalid";
 
 /**
- * API Requests returned by the `/keys` API
+ * API responses returned by the `/keys` API
  */
 export const keys = {
   /**
@@ -205,7 +205,7 @@ import { payload as ud_success } from "./fixtures/udprn/2000-udprn";
 import { payload as ud_notFound } from "./fixtures/udprn/4044-udprn";
 
 /**
- * API Requests returned by the `/udprn` API
+ * API responses returned by the `/udprn` API
  */
 export const udprn = {
   /**
@@ -226,7 +226,7 @@ import { payload as um_success } from "./fixtures/umprn/2000-umprn";
 import { payload as um_notFound } from "./fixtures/umprn/4046-umprn";
 
 /**
- * API Requests returned by the `/umprn` API
+ * API responses returned by the `/umprn` API
  */
 export const umprn = {
   /**
@@ -263,12 +263,12 @@ export const errors = {
   invalidUrl: er_invalidUrl,
 
   /**
-   * API Key balance depleeted response
+   * API Key balance depleted response
    */
   balanceDepleted: er_balanceDepleted,
 
   /**
-   * Maximum number of lookups performed on key today response
+   * Maximum number of lookups performed on key today
    */
   dailyLimitReached: er_limitReached,
 
