@@ -23,8 +23,8 @@ Test coverage should not change for the above steps, otherwise a mistake has bee
 
 ### Export the Fixture
 
-1. Export the fixture via the relevant fixture file in `lib/fixtures`
-2. Test the fixture is exported in `tests/fixutres.unit.ts`
+1. Export the fixture via the relevant fixture file in `lib/index`
+2. Test the fixture is exported in `tests/fixtures.unit.ts`
 
 ### Regenerate Fixtures
 

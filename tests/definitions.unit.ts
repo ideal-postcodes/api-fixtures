@@ -1,23 +1,20 @@
 import { assert } from "chai";
 import { Definition } from "../lib/index";
+import { resourceDefinitions } from "../generate/definitions/index";
 
-// Import definitions
-import postcodes from "../generate/definitions/postcodes";
-import addresses from "../generate/definitions/addresses";
-import autocomplete from "../generate/definitions/autocomplete";
-import keys from "../generate/definitions/keys";
-import udprn from "../generate/definitions/udprn";
-import umprn from "../generate/definitions/umprn";
-import errors from "../generate/definitions/errors";
-
-const resources: Definition[][] = [
-  postcodes,
-  addresses,
-  autocomplete,
-  keys,
-  udprn,
-  umprn,
-  errors,
+/**
+ * EXPECTED_DEFINITIONS
+ *
+ * Insert expected definitions here
+ */
+const EXPECTED_DEFINITIONS: string[] = [
+  "postcodes",
+  "addresses",
+  "autocomplete",
+  "keys",
+  "udprn",
+  "umprn",
+  "errors",
 ];
 
 const isDefinition = (definition: Definition): void => {
@@ -27,10 +24,21 @@ const isDefinition = (definition: Definition): void => {
   assert.isDefined(definition.query);
 };
 
-describe("Resource definitions", () => {
-  it("are exported", () => {
-    resources.forEach(definitions => {
-      definitions.forEach(isDefinition);
+const exportedResources = Object.keys(resourceDefinitions);
+
+describe("Resource definition", () => {
+  it("exports expected resource definitions", () => {
+    EXPECTED_DEFINITIONS.forEach(resourceName => {
+      assert.include(exportedResources, resourceName);
+    });
+  });
+
+  exportedResources.forEach(resourceName => {
+    describe(`for ${resourceName}`, () => {
+      const definitions = resourceDefinitions[resourceName];
+      it ("is exported", () => {
+        definitions.forEach(isDefinition);
+      });
     });
   });
 });

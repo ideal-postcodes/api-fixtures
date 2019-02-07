@@ -3,31 +3,9 @@ import { Fixture } from "../generate/index";
 import { httpAgent } from "../generate/http_agent";
 import { toString, loadSecrets } from "../generate/util";
 import { resolve } from "path";
-import { Definition } from "../lib/index";
 import { writeFileSync } from "fs";
+import { resourceDefinitions } from "../generate/definitions/index";
 
-interface ResourceDefinition {
-  [key: string]: Definition[];
-}
-
-// Import definitions
-import postcodes from "../generate/definitions/postcodes";
-import addresses from "../generate/definitions/addresses";
-import autocomplete from "../generate/definitions/autocomplete";
-import keys from "../generate/definitions/keys";
-import udprn from "../generate/definitions/udprn";
-import umprn from "../generate/definitions/umprn";
-import errors from "../generate/definitions/errors";
-
-const resourceDefinitions: ResourceDefinition = {
-  postcodes,
-  addresses,
-  autocomplete,
-  keys,
-  udprn,
-  umprn,
-  errors,
-};
 
 const BASE_DIR = resolve(__dirname, "../");
 const FIXTURES_DIR = resolve(__dirname, "../lib/fixtures");
