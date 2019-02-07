@@ -1,7 +1,4 @@
-import {
-  HttpOptions,
-  Definition,
-} from "../lib/index";
+import { HttpOptions } from "../lib/index"; 
 
 export interface HttpAgent {
   (request: HttpOptions): Promise<HttpResponse>;
@@ -10,9 +7,5 @@ export interface HttpAgent {
 export interface HttpResponse {
   httpStatus: number;
   body: {};
-}
-
-export interface Fixture extends HttpResponse {
-  definition: Definition;
 }
 

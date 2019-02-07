@@ -1,5 +1,5 @@
-import { Fixture } from "../generate/index";
-import { StringMap } from "../lib/index";
+import { HttpResponse } from "./index";
+import { StringMap, Definition } from "../lib/index";
 import { format } from "prettier";
 import { config } from "dotenv";
 import { resolve } from "path";
@@ -55,9 +55,7 @@ const toJson = (o: {}): string => JSON.stringify(o, null, DEFAULT_SPACING);
  *
  * Writes a fixture Fixture to string
  */
-export const toString = (fixture: Fixture): string => {
-  const parser = "typescript";
-  const { definition } = fixture;
+export const toString = (fixture: HttpResponse, definition: Definition): string => {
   const result = `
     export const payload = {
       description: "${definition.description}",
@@ -68,6 +66,7 @@ export const toString = (fixture: Fixture): string => {
       body: ${toJson(fixture.body)}
     };
   `;
+  const parser = "typescript";
   return format(result, { parser });
 };
 

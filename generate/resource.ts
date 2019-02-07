@@ -1,6 +1,6 @@
 import { Secrets, replaceSecrets } from "./util";
 import { Definition, HttpOptions, StringMap } from "../lib/index";
-import { HttpAgent, Fixture } from "./index";
+import { HttpAgent, HttpResponse } from "./index";
 import { cloneDeep } from "lodash";
 
 interface Options {
@@ -54,20 +54,13 @@ export class Resource {
   }
 
   /**
-   * generateFixtures
+   * generate
    *
    * Retrieves data from live API via HTTP agent for all endpoint definitions
    */
-  public generateFixtures(): Promise<Fixture[]> {
+  public generate(): Promise<HttpResponse[]> {
     const requests = this.definitions.map(def => this.httpAgent({ ...def }));
-    const results = [];
-    return Promise.all(requests)
-      .then(responses => {
-        return responses.map((response, i) => {
-          const definition = this.definitions[i];
-          return { ...response, definition };
-        });
-      });
+    return Promise.all(requests);
   }
 }
 

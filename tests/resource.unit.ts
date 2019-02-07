@@ -1,13 +1,7 @@
 import { assert } from "chai";
 import { Resource } from "../generate/resource";
-import {
-  HttpAgent,
-  Fixture,
-} from "../generate/index";
-import {
-  Definition, 
-  HttpOptions,
-} from "../lib/index";
+import { HttpAgent } from "../generate/index";
+import { Definition, HttpOptions } from "../lib/index";
 
 const HTTP_SUCCESS = 200;
 
@@ -81,10 +75,9 @@ describe("Resource", () => {
     });
   });
 
-  describe("generateFixtures", () => {
+  describe("generate", () => {
     it ("produces a fixtures output", async () => {
-      const [fixture] = await resource.generateFixtures();
-      assert.deepEqual(fixture.definition, resource.definitions[0]);
+      const [fixture] = await resource.generate();
       assert.deepEqual(fixture.body, body);
       assert.equal(fixture.httpStatus, HTTP_SUCCESS);
     });

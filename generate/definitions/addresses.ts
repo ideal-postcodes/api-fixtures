@@ -12,7 +12,6 @@ const addresses: Definition[] = [
     headers: {},
   },
   {
-
     name: "2000-addresses-mr",
     description: "Valid Multiple Residence address query",
     url: "/v1/addresses",

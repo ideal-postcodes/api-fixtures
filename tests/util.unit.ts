@@ -1,6 +1,7 @@
 import { assert } from "chai";
+import { Definition } from "../lib/index";
+import { HttpResponse } from "../generate/index";
 import { resolve } from "path";
-import { Fixture } from "../generate/index";
 import {
   toSecretName,
   replaceSecrets,
@@ -44,18 +45,20 @@ describe("Util", () => {
 
   describe("toString", () => {
     it ("writes a HttpFixture to ES6 string representation", () => {
-      const fixture: Fixture = {
+      const definition: Definition = {
+        name: "Foo",
+        description: "description",
+        query: {
+          api_key: "foo"
+        },
+        url: "/v1/foo",
+      };
+
+      const fixture: HttpResponse = {
         body: { foo: "bar", baz: ["8"] },
         httpStatus: 200,
-        definition: {
-          name: "Foo",
-          description: "description",
-          query: {
-            api_key: "foo"
-          },
-          url: "/v1/foo",
-        }
       };
+
       const expected = `export const payload = {
   description: "description",
   url: "/v1/foo",
@@ -70,7 +73,7 @@ describe("Util", () => {
   }
 };
 `;
-      assert.equal(expected, toString(fixture));
+      assert.equal(expected, toString(fixture, definition));
     });
   });
 });

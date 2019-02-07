@@ -7,10 +7,7 @@ import {
   StringMap,
 } from "../lib/index";
 
-import {
-  Fixture,
-  HttpAgent,
-} from "./index";
+import { HttpAgent } from "./index";
 
 const host = "https://api.ideal-postcodes.co.uk";
 
