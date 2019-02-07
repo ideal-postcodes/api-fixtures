@@ -85,7 +85,7 @@ import { payload as pc_success } from "./fixtures/postcodes/2000-postcodes";
 import { payload as pc_notFound } from "./fixtures/postcodes/4040-postcodes";
 import { payload as pc_mrSuccess } from "./fixtures/postcodes/2000-postcodes-mr";
 
-const postcodes = {
+export const postcodes = {
   success: pc_success,
   notFound: pc_notFound,
   multipleResidence: {
@@ -174,14 +174,4 @@ export const errors = {
   balanceDepleted: er_balanceDepleted,
   dailyLimitReached: er_limitReached,
   dailyIpRateLimitReached: er_limitReached,
-};
-
-export const fixtures = {
-  postcodes,
-  addresses,
-  autocomplete,
-  keys,
-  udprn,
-  umprn,
-  errors,
 };

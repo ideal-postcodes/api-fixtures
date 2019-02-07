@@ -51,11 +51,11 @@ npm install @ideal-postcodes/api-fixtures
 ```
 
 ```javascript
-import { fixtures } from "api-fixtures";
+import { postcodes } from "api-fixtures";
 
-// Example for Postcodes->success
+// Example for postcodes->success
 
-console.log(fixtures.postcodes.success);
+console.log(postcodes.success);
 
 {
   url: "/v1/postcodes/SW1A2AA",
