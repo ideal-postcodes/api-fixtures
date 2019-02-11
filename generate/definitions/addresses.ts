@@ -17,7 +17,7 @@ const addresses: Definition[] = [
     url: "/v1/addresses",
     query: {
       query: "10 cv4 7al",
-      api_key: "<VALID_API_KEY>"
+      api_key: "<VALID_MR_API_KEY>"
     },
     headers: {},
   },
@@ -26,7 +26,7 @@ const addresses: Definition[] = [
     description: "Address query with no results",
     url: "/v1/addresses",
     query: {
-      api_key: "<VALID_MR_API_KEY>",
+      api_key: "<VALID_API_KEY>",
       query: "bakirkoy"
     },
     headers: {},
