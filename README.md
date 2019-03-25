@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="https://img.ideal-postcodes.co.uk/API%Fixtures%20Logo@3x.png" alt="Ideal Postcodes API Fixtures">
+  <img src="https://img.ideal-postcodes.co.uk/API%20Fixtures%20Logo@3x.png" alt="Ideal Postcodes API Fixtures">
 </h1>
 
 > Static test fixtures generated from api.ideal-postcodes.co.uk
