@@ -17,6 +17,10 @@
     "docs": "./node_modules/.bin/typedoc --mode file --target ES3 --out docs/ --name 'Ideal Postcodes API Fixtures' --theme minimal --excludePrivate --hideGenerator --excludeExternals lib/",
     "prepare": "npm run test && npm run build"
   },
+  "files": [
+    "dist",
+    "example.js"
+  ],
   "prettier": {
     "trailingComma": "es5"
   },
@@ -44,7 +48,9 @@
     "all": true
   },
   "mocha": {
-    "extension": ["ts"],
+    "extension": [
+      "ts"
+    ],
     "exit": true,
     "fullTrace": true,
     "require": [
