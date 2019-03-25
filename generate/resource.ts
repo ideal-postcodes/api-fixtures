@@ -1,5 +1,5 @@
 import { Secrets, replaceSecrets } from "./util";
-import { Definition, HttpOptions, StringMap } from "../lib/index";
+import { Definition } from "../lib/index";
 import { HttpAgent, HttpResponse } from "./index";
 import { cloneDeep } from "lodash";
 
@@ -63,4 +63,3 @@ export class Resource {
     return Promise.all(requests);
   }
 }
-
