@@ -1,13 +1,13 @@
 import { assert } from "chai";
 import { Resource } from "../generate/resource";
 import { HttpAgent } from "../generate/index";
-import { Definition, HttpOptions } from "../lib/index";
+import { Definition } from "../lib/index";
 
 const HTTP_SUCCESS = 200;
 
 const genHttpAgent = (body: {}): HttpAgent => {
-  return options => {
-    return new Promise((resolve, reject) => {
+  return () => {
+    return new Promise(resolve => {
       const httpStatus = HTTP_SUCCESS;
       resolve({ body, httpStatus });
     });
@@ -22,10 +22,7 @@ describe("Resource", () => {
   let httpAgent: HttpAgent;
 
   beforeEach(() => {
-    secrets = new Map([
-      ["FOO", "secretfoo"],
-      ["BAR", "secretbar"],
-    ]);
+    secrets = new Map([["FOO", "secretfoo"], ["BAR", "secretbar"]]);
 
     body = { foo: "bar" };
 
@@ -33,11 +30,11 @@ describe("Resource", () => {
       name: "Test",
       description: "Description",
       query: {
-        "api_key": "<BAR>",
-        "query": "BAR",
+        api_key: "<BAR>",
+        query: "BAR",
       },
       headers: {
-        "baz": "quux"
+        baz: "quux",
       },
       url: "/test/url/<FOO>",
     };
@@ -47,11 +44,11 @@ describe("Resource", () => {
   });
 
   describe("Instantiation", () => {
-    it ("instantiates resource", () => {
+    it("instantiates resource", () => {
       assert.isDefined(resource.definitions);
     });
 
-    it ("writes out secrets", () => {
+    it("writes out secrets", () => {
       const def = resource.definitions[0];
       const { query } = def;
       assert.isDefined(query);
@@ -62,25 +59,26 @@ describe("Resource", () => {
       assert.equal(def.url, "/test/url/secretfoo");
     });
 
-    it ("permits undefined headers and querystring in definitions", () => {
-      const definitions: Definition[] = [{
-        name: "Foo",
-        description: "Bar",
-        url: "/test"
-      }];
-      const resource = new Resource({ definitions, httpAgent, secrets });
-      const definition = resource.definitions[0];
-      assert.isUndefined(definition.query);
-      assert.isUndefined(definition.headers);
+    it("permits undefined headers and querystring in definitions", () => {
+      const definitions: Definition[] = [
+        {
+          name: "Foo",
+          description: "Bar",
+          url: "/test",
+        },
+      ];
+      const newResource = new Resource({ definitions, httpAgent, secrets });
+      const def = newResource.definitions[0];
+      assert.isUndefined(def.query);
+      assert.isUndefined(def.headers);
     });
   });
 
   describe("generate", () => {
-    it ("produces a fixtures output", async () => {
+    it("produces a fixtures output", async () => {
       const [fixture] = await resource.generate();
       assert.deepEqual(fixture.body, body);
       assert.equal(fixture.httpStatus, HTTP_SUCCESS);
     });
   });
 });
-
