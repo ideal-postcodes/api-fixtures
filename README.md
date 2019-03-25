@@ -1,14 +1,33 @@
-[![CircleCI](https://circleci.com/gh/ideal-postcodes/api-fixtures.svg?style=svg)](https://circleci.com/gh/ideal-postcodes/api-fixtures) [![Coverage Status](https://coveralls.io/repos/github/ideal-postcodes/api-fixtures/badge.svg?branch=master)](https://coveralls.io/github/ideal-postcodes/api-fixtures?branch=master)
+<h1 align="center">
+  <img src="https://img.ideal-postcodes.co.uk/API%Fixtures%20Logo@3x.png" alt="Ideal Postcodes API Fixtures">
+</h1>
 
-# Ideal Postcodes HTTP API Fixtures
+> Static test fixtures generated from api.ideal-postcodes.co.uk
 
-This JavaScript library provides HTTP API response data for api.ideal-postcodes.co.uk. Canned API responses are exported as [Fixture](https://ideal-postcodes.github.io/api-fixtures/interfaces/fixture.html) objects, containing a JSON response body (`body`) and HTTP Status Code (`httpStatus`).
+[![CircleCI](https://circleci.com/gh/ideal-postcodes/api-fixtures.svg?style=svg)](https://circleci.com/gh/ideal-postcodes/api-fixtures) 
+[![Coverage Status](https://coveralls.io/repos/github/ideal-postcodes/api-fixtures/badge.svg?branch=master)](https://coveralls.io/github/ideal-postcodes/api-fixtures?branch=master)
+[![Try on RunKit](https://badge.runkitcdn.com/@ideal-postcodes/api-fixtures.svg)](https://npm.runkit.com/@ideal-postcodes/api-fixtures)
 
-These test objects may be readily imported into a test suite to stub out test methods or API requests.
+This library provides static HTTP API response data for api.ideal-postcodes.co.uk as JSON objects. Canned API responses are exported as [Fixture](https://ideal-postcodes.github.io/api-fixtures/interfaces/fixture.html) objects, containing a JSON response body (`body`) and HTTP Status Code (`httpStatus`).
 
-Automatically generated documentation which outlines available fixtures can be found at [ideal-postcodes.github.io/api-fixtures](https://ideal-postcodes.github.io/api-fixtures/)
+Fixtures are periodically regenerated with live API requests from api.ideal-postcodes.co.uk.
 
-## Example Usage
+We use it internally as an initial line of testing to mock HTTP requests and stub out API client function calls.
+
+## Features
+
+- Static, importable JSON response payloads generated from api.ideal-postcodes.co.uk (ideal for mock HTTP requests or stubbing API clients)
+- HTTP request definition included
+- Periodically regenerated from live API responses
+- Typescript typings
+- Detailed, low level fixture and type [documentation](https://ideal-postcodes.github.io/api-fixtures/)
+
+## Usage
+
+- [Documentation](https://ideal-postcodes.github.io/api-fixtures/)
+- [Try on Runkit](https://npm.runkit.com/@ideal-postcodes/api-fixtures)
+
+## Example
 
 ```bash
 npm install @ideal-postcodes/api-fixtures
