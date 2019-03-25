@@ -12,7 +12,10 @@ const FIXTURES_DIR = resolve(__dirname, "../lib/fixtures");
 
 const secrets = loadSecrets(BASE_DIR);
 
-const write = (content: { response: HttpResponse, definition: Definition }, resourceName: string): void => {
+const write = (
+  content: { response: HttpResponse; definition: Definition },
+  resourceName: string
+): void => {
   const { definition, response } = content;
   const { name } = definition;
   const path = resolve(FIXTURES_DIR, `${resourceName}/${name}.ts`);
@@ -27,10 +30,13 @@ const main = async () => {
     const responses = await resource.generate();
     responses.forEach((response, i) => {
       const definition = definitions[i];
-      write({ response, definition }, resourceName); 
+      write({ response, definition }, resourceName);
     });
   }
+  // Update timestamp
+  const now = new Date().toJSON();
+  const timestampFile = resolve(BASE_DIR, "last_run");
+  writeFileSync(timestampFile, now, { encoding: "utf8" });
 };
 
 main();
-
