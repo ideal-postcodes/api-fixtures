@@ -2,6 +2,10 @@
 
 Any changes, including backwards incompatible changes will be listed here
    
+## 0.0.4 (25/03/2019)
+
+- Restructure test directory
+
 ## 0.0.3 (12/02/2019)
 
 - Fix: Pass Multiple Residence key to Multiple Residence address query
