@@ -65,6 +65,7 @@
   "license": "MIT",
   "devDependencies": {
     "@cablanchard/tsconfig": "0.0.1",
+    "@cablanchard/tslint": "0.0.1",
     "@types/chai": "~4.1.7",
     "@types/dotenv": "~6.1.0",
     "@types/lodash": "~4.14.120",
