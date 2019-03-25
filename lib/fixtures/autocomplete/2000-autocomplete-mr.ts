@@ -15,23 +15,23 @@ export const payload = {
       hits: [
         {
           suggestion:
-            "Room 10, Block 3 Arthur Vick, Gibbet Hill Road, Coventry, CV4",
+            "Room 10, Block 1 Arthur Vick, Gibbet Hill Road, Coventry, CV4",
           urls: {
             udprn: "/v1/udprn/5770157",
-            umprn: "/v1/umprn/50906342"
+            umprn: "/v1/umprn/50906075"
           },
           udprn: 5770157,
-          umprn: 50906342
+          umprn: 50906075
         },
         {
           suggestion:
-            "Room 101, Block 2 Arthur Vick, Gibbet Hill Road, Coventry, CV4",
+            "Room 10, Block 2 Arthur Vick, Gibbet Hill Road, Coventry, CV4",
           urls: {
             udprn: "/v1/udprn/5770157",
-            umprn: "/v1/umprn/50906261"
+            umprn: "/v1/umprn/50906234"
           },
           udprn: 5770157,
-          umprn: 50906261
+          umprn: 50906234
         },
         {
           suggestion:
@@ -45,56 +45,6 @@ export const payload = {
         },
         {
           suggestion:
-            "Room 103, Block 2 Arthur Vick, Gibbet Hill Road, Coventry, CV4",
-          urls: {
-            udprn: "/v1/udprn/5770157",
-            umprn: "/v1/umprn/50906263"
-          },
-          udprn: 5770157,
-          umprn: 50906263
-        },
-        {
-          suggestion:
-            "Room 103, Block 3 Arthur Vick, Gibbet Hill Road, Coventry, CV4",
-          urls: {
-            udprn: "/v1/udprn/5770157",
-            umprn: "/v1/umprn/50906387"
-          },
-          udprn: 5770157,
-          umprn: 50906387
-        },
-        {
-          suggestion:
-            "Room 104, Block 2 Arthur Vick, Gibbet Hill Road, Coventry, CV4",
-          urls: {
-            udprn: "/v1/udprn/5770157",
-            umprn: "/v1/umprn/50906264"
-          },
-          udprn: 5770157,
-          umprn: 50906264
-        },
-        {
-          suggestion:
-            "Room 104, Block 3 Arthur Vick, Gibbet Hill Road, Coventry, CV4",
-          urls: {
-            udprn: "/v1/udprn/5770157",
-            umprn: "/v1/umprn/50906388"
-          },
-          udprn: 5770157,
-          umprn: 50906388
-        },
-        {
-          suggestion:
-            "Room 105, Block 1 Arthur Vick, Gibbet Hill Road, Coventry, CV4",
-          urls: {
-            udprn: "/v1/udprn/5770157",
-            umprn: "/v1/umprn/50906120"
-          },
-          udprn: 5770157,
-          umprn: 50906120
-        },
-        {
-          suggestion:
             "Room 107, Block 2 Arthur Vick, Gibbet Hill Road, Coventry, CV4",
           urls: {
             udprn: "/v1/udprn/5770157",
@@ -105,13 +55,63 @@ export const payload = {
         },
         {
           suggestion:
-            "Room 109, Block 1 Arthur Vick, Gibbet Hill Road, Coventry, CV4",
+            "Room 108, Block 2 Arthur Vick, Gibbet Hill Road, Coventry, CV4",
           urls: {
             udprn: "/v1/udprn/5770157",
-            umprn: "/v1/umprn/50906124"
+            umprn: "/v1/umprn/50906268"
           },
           udprn: 5770157,
-          umprn: 50906124
+          umprn: 50906268
+        },
+        {
+          suggestion:
+            "Room G, House 10 Whitefields, Gibbet Hill Road, Coventry, CV4",
+          urls: {
+            udprn: "/v1/udprn/5770157",
+            umprn: "/v1/umprn/51108025"
+          },
+          udprn: 5770157,
+          umprn: 51108025
+        },
+        {
+          suggestion:
+            "Room I, House 10 Whitefields, Gibbet Hill Road, Coventry, CV4",
+          urls: {
+            udprn: "/v1/udprn/5770157",
+            umprn: "/v1/umprn/51108027"
+          },
+          udprn: 5770157,
+          umprn: 51108027
+        },
+        {
+          suggestion:
+            "Room K, House 10 Whitefields, Gibbet Hill Road, Coventry, CV4",
+          urls: {
+            udprn: "/v1/udprn/5770157",
+            umprn: "/v1/umprn/51108029"
+          },
+          udprn: 5770157,
+          umprn: 51108029
+        },
+        {
+          suggestion:
+            "Room L, House 10 Whitefields, Gibbet Hill Road, Coventry, CV4",
+          urls: {
+            udprn: "/v1/udprn/5770157",
+            umprn: "/v1/umprn/51108030"
+          },
+          udprn: 5770157,
+          umprn: 51108030
+        },
+        {
+          suggestion:
+            "Room M, House 10 Whitefields, Gibbet Hill Road, Coventry, CV4",
+          urls: {
+            udprn: "/v1/udprn/5770157",
+            umprn: "/v1/umprn/51108031"
+          },
+          udprn: 5770157,
+          umprn: 51108031
         }
       ]
     },
