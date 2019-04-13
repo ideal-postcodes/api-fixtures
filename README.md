@@ -8,7 +8,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/ideal-postcodes/api-fixtures/badge.svg?branch=master)](https://coveralls.io/github/ideal-postcodes/api-fixtures?branch=master)
 [![Try on RunKit](https://badge.runkitcdn.com/@ideal-postcodes/api-fixtures.svg)](https://npm.runkit.com/@ideal-postcodes/api-fixtures)
 
-This library provides static HTTP API response data for api.ideal-postcodes.co.uk as JSON objects. Canned API responses are exported as [Fixture](https://ideal-postcodes.github.io/api-fixtures/interfaces/fixture.html) objects, containing a JSON response body (`body`) and HTTP Status Code (`httpStatus`).
+This library provides static HTTP API response data for api.ideal-postcodes.co.uk as JSON objects. Canned API responses are exported as [Fixture](https://api-fixtures.ideal-postcodes.dev/interfaces/fixture.html) objects, containing a JSON response body (`body`) and HTTP Status Code (`httpStatus`).
 
 Fixtures are periodically regenerated with live API requests from api.ideal-postcodes.co.uk.
 
@@ -20,11 +20,11 @@ We use it internally as an initial line of testing to mock HTTP requests and stu
 - HTTP request definition included
 - Periodically regenerated from live API responses
 - Typescript typings
-- Detailed, low level fixture and type [documentation](https://ideal-postcodes.github.io/api-fixtures/)
+- Detailed, low level fixture and type [documentation](https://api-fixtures.ideal-postcodes.dev/)
 
 ## Usage
 
-- [Documentation](https://ideal-postcodes.github.io/api-fixtures/)
+- [Documentation](https://api-fixtures.ideal-postcodes.dev/)
 - [Try on Runkit](https://npm.runkit.com/@ideal-postcodes/api-fixtures)
 
 ## Example
@@ -73,38 +73,38 @@ console.log(postcodes.success);
 
 ## Quick Reference
 
-- [addresses](https://ideal-postcodes.github.io/api-fixtures/globals.html#addresses)
-  - [success](https://ideal-postcodes.github.io/api-fixtures/globals.html#addresses.success)
-  - [empty](https://ideal-postcodes.github.io/api-fixtures/globals.html#addresses.empty)
-  - [multipleResidence](https://ideal-postcodes.github.io/api-fixtures/globals.html#addresses.multipleresidence)
-    - [success](https://ideal-postcodes.github.io/api-fixtures/globals.html#addresses.multipleresidence.success-1)
-- [autocomplete](https://ideal-postcodes.github.io/api-fixtures/globals.html#autocomplete)
-  - [success](https://ideal-postcodes.github.io/api-fixtures/globals.html#autocomplete.success-1)
-  - [empty](https://ideal-postcodes.github.io/api-fixtures/globals.html#autocomplete.empty)
-  - [multipleResidece](https://ideal-postcodes.github.io/api-fixtures/globals.html#autocomplete.multipleresidence)
-    - [success](https://ideal-postcodes.github.io/api-fixtures/globals.html#autocomplete.multipleresidence.success-1)
-- [postcodes](https://ideal-postcodes.github.io/api-fixtures/globals.html#postcodes)
-  - [success](https://ideal-postcodes.github.io/api-fixtures/globals.html#postcodes.success)
-  - [notFound](https://ideal-postcodes.github.io/api-fixtures/globals.html#postcodes.notfound)
-  - [multipleResidence](https://ideal-postcodes.github.io/api-fixtures/globals.html#postcodes.multipleresidence)
-    - [success](https://ideal-postcodes.github.io/api-fixtures/globals.html#postcodes.multipleresidence.success-1)
-- [keys](https://ideal-postcodes.github.io/api-fixtures/globals.html#keys)
-  - [check](https://ideal-postcodes.github.io/api-fixtures/globals.html#keys.check)
-    - [available](https://ideal-postcodes.github.io/api-fixtures/globals.html#keys.check.available)
-    - [invalid](https://ideal-postcodes.github.io/api-fixtures/globals.html#keys.check.invalid)
-    - [unavailable](https://ideal-postcodes.github.io/api-fixtures/globals.html#keys.check.unavailable)
-- [udprn](https://ideal-postcodes.github.io/api-fixtures/globals.html#udprn)
-  - [success](https://ideal-postcodes.github.io/api-fixtures/globals.html#udprn.success)
-  - [notFound](https://ideal-postcodes.github.io/api-fixtures/globals.html#udprn.notfound)
-- [umprn](https://ideal-postcodes.github.io/api-fixtures/globals.html#umprn)
-  - [success](https://ideal-postcodes.github.io/api-fixtures/globals.html#umprn.success)
-  - [notFound](https://ideal-postcodes.github.io/api-fixtures/globals.html#umprn.notfound)
-- [errors](https://ideal-postcodes.github.io/api-fixtures/globals.html#errors)
-  - [balanceDepleted](https://ideal-postcodes.github.io/api-fixtures/globals.html#errors.balancedepleted)
-  - [dailyIpRateLimitReached](https://ideal-postcodes.github.io/api-fixtures/globals.html#errors.balancedepleted)
-  - [dailyLimitReached](https://ideal-postcodes.github.io/api-fixtures/globals.html#errors.dailylimitreached)
-  - [invalidKey](https://ideal-postcodes.github.io/api-fixtures/globals.html#errors.invalidkey)
-  - [invalidUrl](https://ideal-postcodes.github.io/api-fixtures/globals.html#errors.invalidurl)
+- [addresses](https://api-fixtures.ideal-postcodes.dev/globals.html#addresses)
+  - [success](https://api-fixtures.ideal-postcodes.dev/globals.html#addresses.success)
+  - [empty](https://api-fixtures.ideal-postcodes.dev/globals.html#addresses.empty)
+  - [multipleResidence](https://api-fixtures.ideal-postcodes.dev/globals.html#addresses.multipleresidence)
+    - [success](https://api-fixtures.ideal-postcodes.dev/globals.html#addresses.multipleresidence.success-1)
+- [autocomplete](https://api-fixtures.ideal-postcodes.dev/globals.html#autocomplete)
+  - [success](https://api-fixtures.ideal-postcodes.dev/globals.html#autocomplete.success-1)
+  - [empty](https://api-fixtures.ideal-postcodes.dev/globals.html#autocomplete.empty)
+  - [multipleResidece](https://api-fixtures.ideal-postcodes.dev/globals.html#autocomplete.multipleresidence)
+    - [success](https://api-fixtures.ideal-postcodes.dev/globals.html#autocomplete.multipleresidence.success-1)
+- [postcodes](https://api-fixtures.ideal-postcodes.dev/globals.html#postcodes)
+  - [success](https://api-fixtures.ideal-postcodes.dev/globals.html#postcodes.success)
+  - [notFound](https://api-fixtures.ideal-postcodes.dev/globals.html#postcodes.notfound)
+  - [multipleResidence](https://api-fixtures.ideal-postcodes.dev/globals.html#postcodes.multipleresidence)
+    - [success](https://api-fixtures.ideal-postcodes.dev/globals.html#postcodes.multipleresidence.success-1)
+- [keys](https://api-fixtures.ideal-postcodes.dev/globals.html#keys)
+  - [check](https://api-fixtures.ideal-postcodes.dev/globals.html#keys.check)
+    - [available](https://api-fixtures.ideal-postcodes.dev/globals.html#keys.check.available)
+    - [invalid](https://api-fixtures.ideal-postcodes.dev/globals.html#keys.check.invalid)
+    - [unavailable](https://api-fixtures.ideal-postcodes.dev/globals.html#keys.check.unavailable)
+- [udprn](https://api-fixtures.ideal-postcodes.dev/globals.html#udprn)
+  - [success](https://api-fixtures.ideal-postcodes.dev/globals.html#udprn.success)
+  - [notFound](https://api-fixtures.ideal-postcodes.dev/globals.html#udprn.notfound)
+- [umprn](https://api-fixtures.ideal-postcodes.dev/globals.html#umprn)
+  - [success](https://api-fixtures.ideal-postcodes.dev/globals.html#umprn.success)
+  - [notFound](https://api-fixtures.ideal-postcodes.dev/globals.html#umprn.notfound)
+- [errors](https://api-fixtures.ideal-postcodes.dev/globals.html#errors)
+  - [balanceDepleted](https://api-fixtures.ideal-postcodes.dev/globals.html#errors.balancedepleted)
+  - [dailyIpRateLimitReached](https://api-fixtures.ideal-postcodes.dev/globals.html#errors.balancedepleted)
+  - [dailyLimitReached](https://api-fixtures.ideal-postcodes.dev/globals.html#errors.dailylimitreached)
+  - [invalidKey](https://api-fixtures.ideal-postcodes.dev/globals.html#errors.invalidkey)
+  - [invalidUrl](https://api-fixtures.ideal-postcodes.dev/globals.html#errors.invalidurl)
 
 ## License
 
