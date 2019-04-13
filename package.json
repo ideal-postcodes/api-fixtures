@@ -1,9 +1,19 @@
 {
   "name": "@ideal-postcodes/api-fixtures",
   "description": "api-fixtures",
+  "author": {
+    "name": "Ideal Postcodes",
+    "email": "support@ideal-postcodes.co.uk",
+    "url": "https://ideal-postcodes.co.uk"
+  },
+  "bugs": {
+    "url": "https://github.com/ideal-postcodes/api-fixtures/issues",
+    "email": "support@ideal-postcodes.co.uk"
+  },
+  "homepage": "https://github.com/ideal-postcodes/api-fixtures",
   "repository": {
     "type": "git",
-    "url": "git@github.com:ideal-postcodes/api-fixtures"
+    "url": "https://github.com/ideal-postcodes/api-fixtures.git"
   },
   "version": "0.0.4",
   "main": "dist/index.js",
@@ -61,7 +71,6 @@
   "engines": {
     "node": ">=8.0"
   },
-  "author": "Ideal Postcodes",
   "license": "MIT",
   "devDependencies": {
     "@cablanchard/tsconfig": "0.0.1",
