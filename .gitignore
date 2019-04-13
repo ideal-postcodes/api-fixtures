@@ -59,3 +59,4 @@ dist
 .cache
 
 .DS_Store
+docs
