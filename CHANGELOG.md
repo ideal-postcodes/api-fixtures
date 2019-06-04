@@ -1,7 +1,3 @@
-# Changelog
-
-Any changes, including backwards incompatible changes will be listed here
-   
 ## 0.0.4 (25/03/2019)
 
 - Updated documentation
