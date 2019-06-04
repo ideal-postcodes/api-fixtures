@@ -1,3 +1,12 @@
+# [0.1.0](https://github.com/ideal-postcodes/api-fixtures/compare/0.0.4...0.1.0) (2019-06-04)
+
+
+### Features
+
+* **Fixture Generation:** New run on 2019-06-04 ([620a140](https://github.com/ideal-postcodes/api-fixtures/commit/620a140))
+* **Keys:** Add definitions ([38f1f8e](https://github.com/ideal-postcodes/api-fixtures/commit/38f1f8e))
+* **Semantic Release:** Add automated semantic releases ([3d66131](https://github.com/ideal-postcodes/api-fixtures/commit/3d66131))
+
 ## 0.0.4 (25/03/2019)
 
 - Updated documentation
@@ -12,4 +21,3 @@
 ## 0.0.2 (31/01/2019)
 
 - Initial release
-
