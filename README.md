@@ -7,6 +7,7 @@
 [![CircleCI](https://circleci.com/gh/ideal-postcodes/api-fixtures.svg?style=svg)](https://circleci.com/gh/ideal-postcodes/api-fixtures) 
 [![Coverage Status](https://coveralls.io/repos/github/ideal-postcodes/api-fixtures/badge.svg?branch=master)](https://coveralls.io/github/ideal-postcodes/api-fixtures?branch=master)
 [![Try on RunKit](https://badge.runkitcdn.com/@ideal-postcodes/api-fixtures.svg)](https://npm.runkit.com/@ideal-postcodes/api-fixtures)
+[![npm version](https://badge.fury.io/js/%40ideal-postcodes%2Fapi-fixtures.svg)](https://badge.fury.io/js/%40ideal-postcodes%2Fapi-fixtures)
 
 This library provides static HTTP API response data for api.ideal-postcodes.co.uk as JSON objects. Canned API responses are exported as [Fixture](https://api-fixtures.ideal-postcodes.dev/interfaces/fixture.html) objects, containing a JSON response body (`body`) and HTTP Status Code (`httpStatus`).
 
