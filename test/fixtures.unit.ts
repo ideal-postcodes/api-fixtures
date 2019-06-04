@@ -41,6 +41,8 @@ describe("Fixtures", () => {
     isFixture(keys.check.available);
     isFixture(keys.check.unavailable);
     isFixture(keys.check.invalid);
+    isFixture(keys.private.success);
+    isFixture(keys.usage.success);
   });
 
   it("exports UDPRN fixtures", () => {

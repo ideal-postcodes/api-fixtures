@@ -174,6 +174,8 @@ export const autocomplete = {
 import { payload as ke_available } from "./fixtures/keys/2000-keys";
 import { payload as ke_unavailable } from "./fixtures/keys/2000-keys-unavailable";
 import { payload as ke_invalid } from "./fixtures/keys/4042-keys-invalid";
+import { payload as ke_private_success } from "./fixtures/keys/2000-keys-private";
+import { payload as ke_usage_success } from "./fixtures/keys/2000-keys-usage";
 
 /**
  * API responses returned by the `/keys` API
@@ -195,6 +197,24 @@ export const keys = {
      * Invalid key requested
      */
     invalid: ke_invalid,
+  },
+
+
+  /**
+   * API Key requests for private consumption (i.e. `user_token` is presented)
+   */
+  private: {
+    /**
+     * Private key details successfully extracted
+     */
+    success: ke_private_success,
+  },
+
+  /**
+   * Private key usage successfully extracted
+   */
+  usage: {
+    success: ke_usage_success,
   },
 };
 
