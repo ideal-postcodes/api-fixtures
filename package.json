@@ -19,6 +19,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
+    "semantic-release": "node_modules/.bin/semantic-release --no-ci",
     "test": "npm run lint && NODE_ENV=test node_modules/.bin/nyc node_modules/.bin/mocha",
     "lint": "node_modules/.bin/tslint -c tslint.json -p tsconfig.json lib/**/*.ts",
     "build": "npm run lint && node_modules/.bin/tsc",
@@ -73,6 +74,7 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@cablanchard/semantic-release": "~1.2.1",
     "@cablanchard/tsconfig": "1.0.0",
     "@cablanchard/tslint": "0.0.1",
     "@types/chai": "~4.1.7",
@@ -92,11 +94,15 @@
     "node-fetch": "~2.6.0",
     "nyc": "~14.1.0",
     "prettier": "~1.17.0",
+    "semantic-release": "~15.13.12",
     "source-map-support": "~0.5.10",
     "ts-node": "~8.2.0",
     "tslint": "~5.17.0",
     "typedoc": "~0.14.2",
     "typescript": "~3.5.1"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "release": {
+    "extends": "@cablanchard/semantic-release/dist/npm"
+  }
 }
