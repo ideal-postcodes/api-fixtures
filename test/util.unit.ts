@@ -41,6 +41,14 @@ describe("Util", () => {
       const result = replaceSecrets(input, secrets);
       assert.equal(result, expected);
     });
+    it("replaces secrets in url", () => {
+      const secrets: Map<string, string> = new Map([
+        ["VALID_API_KEY", "foo"],
+      ]);
+      const input = "https://bar.com/<VALID_API_KEY>/quux";
+      const expected = "https://bar.com/foo/quux";
+      assert.equal(replaceSecrets(input, secrets), expected);
+    });
   });
 
   describe("toString", () => {
