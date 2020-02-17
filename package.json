@@ -23,7 +23,7 @@
     "test": "npm run lint && NODE_ENV=test node_modules/.bin/nyc node_modules/.bin/mocha",
     "lint": "node_modules/.bin/tslint -c tslint.json -p tsconfig.json lib/**/*.ts",
     "build": "npm run lint && node_modules/.bin/tsc",
-    "coverage": "node_modules/.bin/nyc report --reporter=text-lcov | node_modules/.bin/coveralls || true",
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
     "generate": "node_modules/.bin/ts-node bin/generate.ts && npm run test && npm run docs",
     "docs": "./node_modules/.bin/typedoc --mode file --target ES3 --out docs/ --name 'Ideal Postcodes API Fixtures' --theme minimal --excludePrivate --hideGenerator --excludeExternals lib/",
     "prepare": "npm run test && npm run build"
@@ -86,7 +86,7 @@
     "@types/node-fetch": "~2.5.0",
     "@types/prettier": "~1.19.0",
     "chai": "~4.2.0",
-    "coveralls": "~3.0.2",
+    "codecov": "~3.6.5",
     "dotenv": "~8.2.0",
     "lodash": "~4.17.11",
     "mocha": "~7.0.0",
