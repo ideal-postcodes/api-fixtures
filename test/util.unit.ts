@@ -77,16 +77,16 @@ export const payload = {
   description: "description",
   url: "/v1/foo",
   query: {
-    api_key: "foo"
+    api_key: "foo",
   },
   headers: {
-    baz: "quux"
+    baz: "quux",
   },
   httpStatus: 200,
   body: {
     foo: "bar",
-    baz: ["8"]
-  }
+    baz: ["8"],
+  },
 };
 `;
       assert.equal(expected, toString(fixture, definition));
@@ -115,8 +115,8 @@ export const payload = {
   httpStatus: 200,
   body: {
     foo: "bar",
-    baz: ["8"]
-  }
+    baz: ["8"],
+  },
 };
 `;
     assert.equal(expected, toString(fixture, definition));
