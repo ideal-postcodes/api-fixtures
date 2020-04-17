@@ -1,3 +1,15 @@
+# [1.0.0](https://github.com/ideal-postcodes/api-fixtures/compare/0.1.0...1.0.0) (2020-04-17)
+
+
+### Tests
+
+* **Deps:** Upgrade X dependency ([040be2f](https://github.com/ideal-postcodes/api-fixtures/commit/040be2f))
+
+
+### BREAKING CHANGES
+
+* **Deps:** Drop support for node 8
+
 # [0.1.0](https://github.com/ideal-postcodes/api-fixtures/compare/0.0.4...0.1.0) (2019-06-04)
 
 
