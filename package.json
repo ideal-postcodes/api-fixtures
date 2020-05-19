@@ -86,7 +86,7 @@
     "@types/node-fetch": "~2.5.0",
     "@types/prettier": "~2.0.0",
     "chai": "~4.2.0",
-    "codecov": "~3.6.5",
+    "codecov": "~3.7.0",
     "dotenv": "~8.2.0",
     "lodash": "~4.17.11",
     "mocha": "~7.1.0",
