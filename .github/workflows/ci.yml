@@ -1,9 +1,12 @@
-name: CI
+name: Release
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
 
 jobs:
-  CI:
+  release:
     runs-on: ubuntu-latest
 
     strategy:
@@ -30,14 +33,10 @@ jobs:
       - name: Test
         run: npm test
 
-      - name: lint
-        run: npm run lint
-
       - name: Build
         run: npm run build
 
-      - name: Semantic Release
-        run: npm run semantic-release
+      - name: Coverage
+        run: npm run coverage
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN  }}
