@@ -26,7 +26,7 @@
     "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
     "generate": "node_modules/.bin/ts-node bin/generate.ts && npm run test && npm run docs",
     "docs": "./node_modules/.bin/typedoc --mode file --target ES3 --out docs/ --name 'Ideal Postcodes API Fixtures' --theme minimal --excludePrivate --hideGenerator --excludeExternals lib/",
-    "prepare": "npm run test && npm run build"
+    "prepublishOnly": "npm run test && npm run build"
   },
   "files": [
     "dist",
