@@ -1,0 +1,41 @@
+import { Address } from "@ideal-postcodes/api-typings";
+
+/**
+ * @hidden
+ */
+export const payload: Address = {
+  postcode: "BT70 1HX",
+  post_town: "DUNGANNON",
+  dependant_locality: "",
+  double_dependant_locality: "",
+  thoroughfare: "Quarry Lane",
+  dependant_thoroughfare: "",
+  building_number: "1",
+  building_name: "",
+  sub_building_name: "",
+  po_box: "",
+  department_name: "",
+  organisation_name: "Police Service Of Northern Ireland",
+  udprn: 3728054,
+  umprn: "",
+  postcode_type: "S",
+  su_organisation_indicator: "Y",
+  delivery_point_suffix: "1D",
+  postcode_inward: "1HX",
+  postcode_outward: "BT70",
+  line_1: "Police Service Of Northern Ireland",
+  line_2: "1 Quarry Lane",
+  line_3: "",
+  premise: "1",
+  longitude: -6.775322,
+  latitude: 54.509886,
+  eastings: 279374,
+  northings: 363077,
+  country: "Northern Ireland",
+  traditional_county: "",
+  administrative_county: "",
+  postal_county: "County Tyrone",
+  county: "County Tyrone",
+  district: "Mid Ulster",
+  ward: "Mullaghmore",
+};

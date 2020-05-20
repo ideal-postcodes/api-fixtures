@@ -7,7 +7,13 @@ import {
   udprn,
   umprn,
   errors,
+  address,
 } from "../lib/index";
+
+const isAddress = (address: any): void => {
+  assert.isDefined(address.udprn);
+  assert.isDefined(address.line_1);
+};
 
 const isFixture = (fixture: any): void => {
   assert.isDefined(fixture.description);
@@ -61,5 +67,15 @@ describe("Fixtures", () => {
     isFixture(errors.balanceDepleted);
     isFixture(errors.dailyLimitReached);
     isFixture(errors.dailyIpRateLimitReached);
+  });
+
+  it("exports addresses", () => {
+    isAddress(address.england);
+    isAddress(address.scotland);
+    isAddress(address.wales);
+    isAddress(address.northernIreland);
+    isAddress(address.jersey);
+    isAddress(address.guernsey);
+    isAddress(address.isleOfMan);
   });
 });
