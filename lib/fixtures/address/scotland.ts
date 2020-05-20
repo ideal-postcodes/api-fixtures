@@ -1,0 +1,41 @@
+import { Address } from "@ideal-postcodes/api-typings";
+
+/**
+ * @hidden
+ */
+export const payload: Address = {
+  postcode: "G46 8NG",
+  post_town: "GLASGOW",
+  dependant_locality: "Thornliebank",
+  double_dependant_locality: "",
+  thoroughfare: "Spiersbridge Way",
+  dependant_thoroughfare: "",
+  building_number: "1",
+  building_name: "",
+  sub_building_name: "",
+  po_box: "",
+  department_name: "",
+  organisation_name: "Research Scotland",
+  udprn: 52997160,
+  umprn: "",
+  postcode_type: "S",
+  su_organisation_indicator: "Y",
+  delivery_point_suffix: "3S",
+  postcode_inward: "8NG",
+  postcode_outward: "G46",
+  line_1: "Research Scotland",
+  line_2: "1 Spiersbridge Way",
+  line_3: "Thornliebank",
+  premise: "1",
+  longitude: -4.320521,
+  latitude: 55.80442,
+  eastings: 254652,
+  northings: 659231,
+  country: "Scotland",
+  traditional_county: "Renfrewshire",
+  administrative_county: "",
+  postal_county: "Lanarkshire",
+  county: "Lanarkshire",
+  district: "East Renfrewshire",
+  ward: "Giffnock and Thornliebank",
+};

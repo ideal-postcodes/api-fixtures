@@ -1,0 +1,41 @@
+import { Address } from "@ideal-postcodes/api-typings";
+
+/**
+ * @hidden
+ */
+export const payload: Address = {
+  postcode: "NP26 3DG",
+  post_town: "CALDICOT",
+  dependant_locality: "Magor",
+  double_dependant_locality: "",
+  thoroughfare: "Newport Road",
+  dependant_thoroughfare: "Wales 1 Business Park",
+  building_number: "",
+  building_name: "",
+  sub_building_name: "",
+  po_box: "",
+  department_name: "",
+  organisation_name: "Wales 1 Day Nursery",
+  udprn: 53635385,
+  umprn: "",
+  postcode_type: "S",
+  su_organisation_indicator: "Y",
+  delivery_point_suffix: "2F",
+  postcode_inward: "3DG",
+  postcode_outward: "NP26",
+  line_1: "Wales 1 Day Nursery",
+  line_2: "Wales 1 Business Park",
+  line_3: "Newport Road, Magor",
+  premise: "",
+  longitude: -2.840411,
+  latitude: 51.586466,
+  eastings: 341871,
+  northings: 187847,
+  country: "Wales",
+  traditional_county: "Monmouthshire",
+  administrative_county: "",
+  postal_county: "Gwent",
+  county: "Gwent",
+  district: "Monmouthshire",
+  ward: "Mill",
+};

@@ -199,7 +199,6 @@ export const keys = {
     invalid: ke_invalid,
   },
 
-
   /**
    * API Key requests for private consumption (i.e. `user_token` is presented)
    */
@@ -296,4 +295,22 @@ export const errors = {
    * Maximum number of lookups performed on key for requesting IP address
    */
   dailyIpRateLimitReached: er_limitReached,
+};
+
+import { payload as england } from "./fixtures/address/england";
+import { payload as scotland } from "./fixtures/address/scotland";
+import { payload as wales } from "./fixtures/address/wales";
+import { payload as northernIreland } from "./fixtures/address/northern_ireland";
+import { payload as jersey } from "./fixtures/address/jersey";
+import { payload as guernsey } from "./fixtures/address/guernsey";
+import { payload as isleOfMan } from "./fixtures/address/isle_of_man";
+
+export const address = {
+  england,
+  scotland,
+  wales,
+  northernIreland,
+  jersey,
+  guernsey,
+  isleOfMan,
 };

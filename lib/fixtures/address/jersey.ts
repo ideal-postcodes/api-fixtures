@@ -1,0 +1,41 @@
+import { Address } from "@ideal-postcodes/api-typings";
+
+/**
+ * @hidden
+ */
+export const payload: Address = {
+  postcode: "JE1 8SB",
+  post_town: "JERSEY",
+  dependant_locality: "",
+  double_dependant_locality: "",
+  thoroughfare: "Bath Street",
+  dependant_thoroughfare: "",
+  building_number: "54",
+  building_name: "The Le Gallais Building",
+  sub_building_name: "",
+  po_box: "",
+  department_name: "",
+  organisation_name: "Minerva Trust & Corporate Service Ltd",
+  udprn: 55068976,
+  umprn: "",
+  postcode_type: "L",
+  su_organisation_indicator: "",
+  delivery_point_suffix: "1A",
+  postcode_inward: "8SB",
+  postcode_outward: "JE1",
+  line_1: "Minerva Trust & Corporate Service Ltd",
+  line_2: "The Le Gallais Building",
+  line_3: "54 Bath Street",
+  premise: "The Le Gallais Building, 54",
+  longitude: -2.1333,
+  latitude: 49.2,
+  eastings: "",
+  northings: "",
+  country: "Channel Islands",
+  traditional_county: "",
+  administrative_county: "",
+  postal_county: "Channel Isles",
+  county: "Channel Isles",
+  district: "",
+  ward: "",
+};

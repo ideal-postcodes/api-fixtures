@@ -1,0 +1,41 @@
+import { Address } from "@ideal-postcodes/api-typings";
+
+/**
+ * @hidden
+ */
+export const payload: Address = {
+  postcode: "GY1 3AQ",
+  post_town: "GUERNSEY",
+  dependant_locality: "",
+  double_dependant_locality: "",
+  thoroughfare: "",
+  dependant_thoroughfare: "",
+  building_number: "",
+  building_name: "",
+  sub_building_name: "",
+  po_box: "14    ",
+  department_name: "",
+  organisation_name: "Premier Cars Ltd",
+  udprn: 10387754,
+  umprn: "",
+  postcode_type: "L",
+  su_organisation_indicator: "",
+  delivery_point_suffix: "1A",
+  postcode_inward: "3AQ",
+  postcode_outward: "GY1",
+  line_1: "Premier Cars Ltd",
+  line_2: "PO Box 14    ",
+  line_3: "",
+  premise: "PO Box 14    ",
+  longitude: -2.543269,
+  latitude: 49.452881,
+  eastings: "",
+  northings: "",
+  country: "Channel Islands",
+  traditional_county: "",
+  administrative_county: "",
+  postal_county: "Channel Isles",
+  county: "Channel Isles",
+  district: "",
+  ward: "",
+};
