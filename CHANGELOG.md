@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/ideal-postcodes/api-fixtures/compare/1.0.0...1.1.0) (2020-05-20)
+
+
+### Features
+
+* **Address:** Add country specific address fixtures ([14bff6e](https://github.com/ideal-postcodes/api-fixtures/commit/14bff6e))
+
 # [1.0.0](https://github.com/ideal-postcodes/api-fixtures/compare/0.1.0...1.0.0) (2020-04-17)
 
 
