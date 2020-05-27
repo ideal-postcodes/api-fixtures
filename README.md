@@ -4,8 +4,8 @@
 
 > Static test fixtures generated from api.ideal-postcodes.co.uk
 
-[![CircleCI](https://circleci.com/gh/ideal-postcodes/api-fixtures.svg?style=svg)](https://circleci.com/gh/ideal-postcodes/api-fixtures) 
-[![Coverage Status](https://coveralls.io/repos/github/ideal-postcodes/api-fixtures/badge.svg?branch=master)](https://coveralls.io/github/ideal-postcodes/api-fixtures?branch=master)
+![Release](https://github.com/ideal-postcodes/api-fixtures/workflows/Release/badge.svg)[![Coverage Status](https://coveralls.io/repos/github/ideal-postcodes/api-fixtures/badge.svg?branch=master)](https://coveralls.io/github/ideal-postcodes/api-fixtures?branch=master)
+![CI](https://github.com/ideal-postcodes/api-fixtures/workflows/CI/badge.svg)
 [![Try on RunKit](https://badge.runkitcdn.com/@ideal-postcodes/api-fixtures.svg)](https://npm.runkit.com/@ideal-postcodes/api-fixtures)
 [![npm version](https://badge.fury.io/js/%40ideal-postcodes%2Fapi-fixtures.svg)](https://badge.fury.io/js/%40ideal-postcodes%2Fapi-fixtures)
 
