@@ -5,7 +5,7 @@ export const payload = {
   description: "UDPRN address retrieval",
   url: "/v1/udprn/23747208",
   query: {
-    api_key: "<VALID_API_KEY>"
+    api_key: "<VALID_API_KEY>",
   },
   headers: {},
   httpStatus: 200,
@@ -34,8 +34,8 @@ export const payload = {
       line_2: "Houses Of Parliament",
       line_3: "",
       premise: "Houses Of Parliament",
-      longitude: -0.124663,
-      latitude: 51.49984,
+      longitude: -0.1246375,
+      latitude: 51.4998415,
       eastings: 530268,
       northings: 179545,
       country: "England",
@@ -44,9 +44,10 @@ export const payload = {
       postal_county: "London",
       county: "London",
       district: "Westminster",
-      ward: "St James's"
+      ward: "St James's",
+      uprn: "10033540874",
     },
     code: 2000,
-    message: "Success"
-  }
+    message: "Success",
+  },
 };
