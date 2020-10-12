@@ -5,7 +5,7 @@ export const payload = {
   description: "UMPRN address retrieval",
   url: "/v1/umprn/50906066",
   query: {
-    api_key: "<VALID_MR_API_KEY>"
+    api_key: "<VALID_MR_API_KEY>",
   },
   headers: {},
   httpStatus: 200,
@@ -34,8 +34,8 @@ export const payload = {
       line_2: "Gibbet Hill Road",
       line_3: "",
       premise: "Room 1, Block 1 Arthur Vick",
-      longitude: -1.564814,
-      latitude: 52.38581,
+      longitude: -1.5648072,
+      latitude: 52.3858227,
       eastings: 429716,
       northings: 276509,
       country: "England",
@@ -44,9 +44,10 @@ export const payload = {
       postal_county: "West Midlands",
       county: "West Midlands",
       district: "Coventry",
-      ward: "Wainbody"
+      ward: "Wainbody",
+      uprn: "200001572050",
     },
     code: 2000,
-    message: "Success"
-  }
+    message: "Success",
+  },
 };

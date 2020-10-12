@@ -9,9 +9,9 @@ export const payload = {
   httpStatus: 200,
   body: {
     result: {
-      available: false
+      available: false,
     },
     code: 2000,
-    message: "Success"
-  }
+    message: "Success",
+  },
 };
