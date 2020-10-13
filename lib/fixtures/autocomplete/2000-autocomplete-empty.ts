@@ -6,15 +6,15 @@ export const payload = {
   url: "/v1/autocomplete/addresses",
   query: {
     api_key: "<VALID_API_KEY>",
-    q: "uskudar"
+    q: "uskudar",
   },
   headers: {},
   httpStatus: 200,
   body: {
     result: {
-      hits: []
+      hits: [],
     },
     code: 2000,
-    message: "Success"
-  }
+    message: "Success",
+  },
 };

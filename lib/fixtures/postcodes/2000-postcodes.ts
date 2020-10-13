@@ -5,7 +5,7 @@ export const payload = {
   description: "Successful postcode resolution request",
   url: "/v1/postcodes/SW1A2AA",
   query: {
-    api_key: "<VALID_API_KEY>"
+    api_key: "<VALID_API_KEY>",
   },
   headers: {},
   httpStatus: 200,
@@ -35,8 +35,8 @@ export const payload = {
         line_2: "10 Downing Street",
         line_3: "",
         premise: "10",
-        longitude: -0.127695,
-        latitude: 51.50354,
+        longitude: -0.12767,
+        latitude: 51.503541,
         eastings: 530047,
         northings: 179951,
         country: "England",
@@ -45,10 +45,11 @@ export const payload = {
         postal_county: "London",
         county: "London",
         district: "Westminster",
-        ward: "St James's"
-      }
+        ward: "St James's",
+        uprn: "100023336956",
+      },
     ],
     code: 2000,
-    message: "Success"
-  }
+    message: "Success",
+  },
 };

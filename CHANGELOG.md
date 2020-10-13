@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/ideal-postcodes/api-fixtures/compare/1.1.0...1.2.0) (2020-10-12)
+
+
+### Features
+
+* **Rebuild:** Updates for rooftop geos and uprn ([56b29fc](https://github.com/ideal-postcodes/api-fixtures/commit/56b29fc))
+
 # [1.1.0](https://github.com/ideal-postcodes/api-fixtures/compare/1.0.0...1.1.0) (2020-05-20)
 
 
