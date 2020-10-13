@@ -6,7 +6,7 @@ export const payload = {
   url: "/v1/addresses",
   query: {
     api_key: "<VALID_API_KEY>",
-    query: "bakirkoy"
+    query: "bakirkoy",
   },
   headers: {},
   httpStatus: 200,
@@ -15,9 +15,9 @@ export const payload = {
       total: 0,
       limit: 10,
       page: 0,
-      hits: []
+      hits: [],
     },
     code: 2000,
-    message: "Success"
-  }
+    message: "Success",
+  },
 };

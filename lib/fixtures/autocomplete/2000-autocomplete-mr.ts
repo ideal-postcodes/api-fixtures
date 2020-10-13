@@ -6,7 +6,7 @@ export const payload = {
   url: "/v1/autocomplete/addresses",
   query: {
     query: "10 cv4 7al",
-    api_key: "<VALID_MR_API_KEY>"
+    api_key: "<VALID_MR_API_KEY>",
   },
   headers: {},
   httpStatus: 200,
@@ -14,108 +14,98 @@ export const payload = {
     result: {
       hits: [
         {
-          suggestion:
-            "Room 10, Block 3 Arthur Vick, Gibbet Hill Road, Coventry, CV4",
+          suggestion: "Room 1011, Heronbank, Gibbet Hill Road, Coventry, CV4",
           urls: {
             udprn: "/v1/udprn/5770157",
-            umprn: "/v1/umprn/50906342"
+            umprn: "/v1/umprn/51104016",
           },
           udprn: 5770157,
-          umprn: 50906342
+          umprn: 51104016,
         },
         {
-          suggestion:
-            "Room 103, Block 1 Arthur Vick, Gibbet Hill Road, Coventry, CV4",
+          suggestion: "Room 1013, Heronbank, Gibbet Hill Road, Coventry, CV4",
           urls: {
             udprn: "/v1/udprn/5770157",
-            umprn: "/v1/umprn/50906118"
+            umprn: "/v1/umprn/51104018",
           },
           udprn: 5770157,
-          umprn: 50906118
+          umprn: 51104018,
         },
         {
-          suggestion:
-            "Room 103, Block 3 Arthur Vick, Gibbet Hill Road, Coventry, CV4",
+          suggestion: "Room 1014, Heronbank, Gibbet Hill Road, Coventry, CV4",
           urls: {
             udprn: "/v1/udprn/5770157",
-            umprn: "/v1/umprn/50906387"
+            umprn: "/v1/umprn/51104019",
           },
           udprn: 5770157,
-          umprn: 50906387
+          umprn: 51104019,
         },
         {
-          suggestion:
-            "Room 105, Block 1 Arthur Vick, Gibbet Hill Road, Coventry, CV4",
+          suggestion: "Room 1018, Heronbank, Gibbet Hill Road, Coventry, CV4",
           urls: {
             udprn: "/v1/udprn/5770157",
-            umprn: "/v1/umprn/50906120"
+            umprn: "/v1/umprn/51104023",
           },
           udprn: 5770157,
-          umprn: 50906120
+          umprn: 51104023,
         },
         {
-          suggestion:
-            "Room 105, Block 2 Arthur Vick, Gibbet Hill Road, Coventry, CV4",
+          suggestion: "Room 1025, Heronbank, Gibbet Hill Road, Coventry, CV4",
           urls: {
             udprn: "/v1/udprn/5770157",
-            umprn: "/v1/umprn/50906265"
+            umprn: "/v1/umprn/51104030",
           },
           udprn: 5770157,
-          umprn: 50906265
+          umprn: 51104030,
         },
         {
-          suggestion:
-            "Room 107, Block 2 Arthur Vick, Gibbet Hill Road, Coventry, CV4",
+          suggestion: "Room 1028, Heronbank, Gibbet Hill Road, Coventry, CV4",
           urls: {
             udprn: "/v1/udprn/5770157",
-            umprn: "/v1/umprn/50906267"
+            umprn: "/v1/umprn/51104033",
           },
           udprn: 5770157,
-          umprn: 50906267
+          umprn: 51104033,
         },
         {
-          suggestion:
-            "Room 107, Block 3 Arthur Vick, Gibbet Hill Road, Coventry, CV4",
+          suggestion: "Room 1042, Heronbank, Gibbet Hill Road, Coventry, CV4",
           urls: {
             udprn: "/v1/udprn/5770157",
-            umprn: "/v1/umprn/50906391"
+            umprn: "/v1/umprn/51104047",
           },
           udprn: 5770157,
-          umprn: 50906391
+          umprn: 51104047,
         },
         {
-          suggestion:
-            "Room 108, Block 1 Arthur Vick, Gibbet Hill Road, Coventry, CV4",
+          suggestion: "Room 1044, Heronbank, Gibbet Hill Road, Coventry, CV4",
           urls: {
             udprn: "/v1/udprn/5770157",
-            umprn: "/v1/umprn/50906123"
+            umprn: "/v1/umprn/51104049",
           },
           udprn: 5770157,
-          umprn: 50906123
+          umprn: 51104049,
         },
         {
-          suggestion:
-            "Room 109, Block 1 Arthur Vick, Gibbet Hill Road, Coventry, CV4",
+          suggestion: "Room 1045, Heronbank, Gibbet Hill Road, Coventry, CV4",
           urls: {
             udprn: "/v1/udprn/5770157",
-            umprn: "/v1/umprn/50906124"
+            umprn: "/v1/umprn/51104050",
           },
           udprn: 5770157,
-          umprn: 50906124
+          umprn: 51104050,
         },
         {
-          suggestion:
-            "Room 109, Block 2 Arthur Vick, Gibbet Hill Road, Coventry, CV4",
+          suggestion: "Room 1047, Heronbank, Gibbet Hill Road, Coventry, CV4",
           urls: {
             udprn: "/v1/udprn/5770157",
-            umprn: "/v1/umprn/50906269"
+            umprn: "/v1/umprn/51104052",
           },
           udprn: 5770157,
-          umprn: 50906269
-        }
-      ]
+          umprn: 51104052,
+        },
+      ],
     },
     code: 2000,
-    message: "Success"
-  }
+    message: "Success",
+  },
 };
