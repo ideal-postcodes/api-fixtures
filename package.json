@@ -94,7 +94,7 @@
     "nock": "13.0.4",
     "node-fetch": "~2.6.0",
     "nyc": "~15.1.0",
-    "prettier": "~2.1.0",
+    "prettier": "~2.2.0",
     "semantic-release": "~17.2.0",
     "source-map-support": "~0.5.10",
     "ts-node": "~9.0.0",
