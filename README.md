@@ -37,7 +37,7 @@ npm install @ideal-postcodes/api-fixtures
 ```javascript
 import { postcodes } from "@ideal-postcodes/api-fixtures";
 
-// or 
+// or
 // const { postcodes } = require("@ideal-postcodes/api-fixtures");
 
 console.log(postcodes.success);
@@ -82,7 +82,7 @@ console.log(postcodes.success);
 - [autocomplete](https://api-fixtures.ideal-postcodes.dev/globals.html#autocomplete)
   - [success](https://api-fixtures.ideal-postcodes.dev/globals.html#autocomplete.success-1)
   - [empty](https://api-fixtures.ideal-postcodes.dev/globals.html#autocomplete.empty)
-  - [multipleResidece](https://api-fixtures.ideal-postcodes.dev/globals.html#autocomplete.multipleresidence)
+  - [multipleResidence](https://api-fixtures.ideal-postcodes.dev/globals.html#autocomplete.multipleresidence)
     - [success](https://api-fixtures.ideal-postcodes.dev/globals.html#autocomplete.multipleresidence.success-1)
 - [postcodes](https://api-fixtures.ideal-postcodes.dev/globals.html#postcodes)
   - [success](https://api-fixtures.ideal-postcodes.dev/globals.html#postcodes.success)
@@ -111,9 +111,8 @@ console.log(postcodes.success);
   - [invalidKey](https://api-fixtures.ideal-postcodes.dev/globals.html#errors.invalidkey)
   - [invalidUrl](https://api-fixtures.ideal-postcodes.dev/globals.html#errors.invalidurl)
 
-## License
+## Licence
 
 Code is MIT
 
 Data provided by API is for testing and integration purposes only for PAF Products
-
