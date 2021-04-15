@@ -1,9 +1,6 @@
-name: Release
+name: CI
 
-on:
-  push:
-    branches:
-      - master
+on: [push]
 
 jobs:
   release:
