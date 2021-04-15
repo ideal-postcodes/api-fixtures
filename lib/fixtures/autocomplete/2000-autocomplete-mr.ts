@@ -14,6 +14,51 @@ export const payload = {
     result: {
       hits: [
         {
+          suggestion: "Room 1001, Heronbank, Gibbet Hill Road, Coventry, CV4",
+          urls: {
+            udprn: "/v1/udprn/5770157",
+            umprn: "/v1/umprn/51104006",
+          },
+          udprn: 5770157,
+          umprn: 51104006,
+        },
+        {
+          suggestion: "Room 1002, Heronbank, Gibbet Hill Road, Coventry, CV4",
+          urls: {
+            udprn: "/v1/udprn/5770157",
+            umprn: "/v1/umprn/51104007",
+          },
+          udprn: 5770157,
+          umprn: 51104007,
+        },
+        {
+          suggestion: "Room 1004, Heronbank, Gibbet Hill Road, Coventry, CV4",
+          urls: {
+            udprn: "/v1/udprn/5770157",
+            umprn: "/v1/umprn/51104009",
+          },
+          udprn: 5770157,
+          umprn: 51104009,
+        },
+        {
+          suggestion: "Room 1006, Heronbank, Gibbet Hill Road, Coventry, CV4",
+          urls: {
+            udprn: "/v1/udprn/5770157",
+            umprn: "/v1/umprn/51104011",
+          },
+          udprn: 5770157,
+          umprn: 51104011,
+        },
+        {
+          suggestion: "Room 1008, Heronbank, Gibbet Hill Road, Coventry, CV4",
+          urls: {
+            udprn: "/v1/udprn/5770157",
+            umprn: "/v1/umprn/51104013",
+          },
+          udprn: 5770157,
+          umprn: 51104013,
+        },
+        {
           suggestion: "Room 1011, Heronbank, Gibbet Hill Road, Coventry, CV4",
           urls: {
             udprn: "/v1/udprn/5770157",
@@ -32,22 +77,22 @@ export const payload = {
           umprn: 51104018,
         },
         {
-          suggestion: "Room 1014, Heronbank, Gibbet Hill Road, Coventry, CV4",
+          suggestion: "Room 1016, Heronbank, Gibbet Hill Road, Coventry, CV4",
           urls: {
             udprn: "/v1/udprn/5770157",
-            umprn: "/v1/umprn/51104019",
+            umprn: "/v1/umprn/51104021",
           },
           udprn: 5770157,
-          umprn: 51104019,
+          umprn: 51104021,
         },
         {
-          suggestion: "Room 1018, Heronbank, Gibbet Hill Road, Coventry, CV4",
+          suggestion: "Room 1024, Heronbank, Gibbet Hill Road, Coventry, CV4",
           urls: {
             udprn: "/v1/udprn/5770157",
-            umprn: "/v1/umprn/51104023",
+            umprn: "/v1/umprn/51104029",
           },
           udprn: 5770157,
-          umprn: 51104023,
+          umprn: 51104029,
         },
         {
           suggestion: "Room 1025, Heronbank, Gibbet Hill Road, Coventry, CV4",
@@ -57,51 +102,6 @@ export const payload = {
           },
           udprn: 5770157,
           umprn: 51104030,
-        },
-        {
-          suggestion: "Room 1028, Heronbank, Gibbet Hill Road, Coventry, CV4",
-          urls: {
-            udprn: "/v1/udprn/5770157",
-            umprn: "/v1/umprn/51104033",
-          },
-          udprn: 5770157,
-          umprn: 51104033,
-        },
-        {
-          suggestion: "Room 1042, Heronbank, Gibbet Hill Road, Coventry, CV4",
-          urls: {
-            udprn: "/v1/udprn/5770157",
-            umprn: "/v1/umprn/51104047",
-          },
-          udprn: 5770157,
-          umprn: 51104047,
-        },
-        {
-          suggestion: "Room 1044, Heronbank, Gibbet Hill Road, Coventry, CV4",
-          urls: {
-            udprn: "/v1/udprn/5770157",
-            umprn: "/v1/umprn/51104049",
-          },
-          udprn: 5770157,
-          umprn: 51104049,
-        },
-        {
-          suggestion: "Room 1045, Heronbank, Gibbet Hill Road, Coventry, CV4",
-          urls: {
-            udprn: "/v1/udprn/5770157",
-            umprn: "/v1/umprn/51104050",
-          },
-          udprn: 5770157,
-          umprn: 51104050,
-        },
-        {
-          suggestion: "Room 1047, Heronbank, Gibbet Hill Road, Coventry, CV4",
-          urls: {
-            udprn: "/v1/udprn/5770157",
-            umprn: "/v1/umprn/51104052",
-          },
-          udprn: 5770157,
-          umprn: 51104052,
         },
       ],
     },

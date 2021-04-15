@@ -51,5 +51,8 @@ export const payload = {
     ],
     code: 2000,
     message: "Success",
+    total: 1,
+    page: 0,
+    limit: 100,
   },
 };
