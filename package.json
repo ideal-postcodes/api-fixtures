@@ -103,7 +103,6 @@
     "typedoc": "^0.20.35",
     "typescript": "~4.2.4"
   },
-  "dependencies": {},
   "release": {
     "extends": "@cablanchard/semantic-release/dist/npm"
   }
