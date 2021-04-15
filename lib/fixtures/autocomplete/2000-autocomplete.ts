@@ -28,18 +28,18 @@ export const payload = {
           udprn: 19201138,
         },
         {
-          suggestion: "87 Brompton Farm Road, Rochester, ME2",
-          urls: {
-            udprn: "/v1/udprn/14841148",
-          },
-          udprn: 14841148,
-        },
-        {
           suggestion: "87 Brompton Road, Hamilton, Leicester, LE5",
           urls: {
             udprn: "/v1/udprn/28408866",
           },
           udprn: 28408866,
+        },
+        {
+          suggestion: "87 Brompton Farm Road, Rochester, ME2",
+          urls: {
+            udprn: "/v1/udprn/14841148",
+          },
+          udprn: 14841148,
         },
         {
           suggestion: "Cadogan Contemporary, 87 Old Brompton Road, London, SW7",

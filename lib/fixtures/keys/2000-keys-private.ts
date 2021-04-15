@@ -28,6 +28,11 @@ export const payload = {
       automated_topups: {
         enabled: false,
       },
+      datasets: {
+        paf: true,
+        mr: false,
+        nyb: false,
+      },
       current_purchases: [],
     },
     code: 2000,
