@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/ideal-postcodes/api-fixtures/compare/1.2.0...1.3.0) (2021-04-15)
+
+
+### Features
+
+* **Rebuild:** Recreate fixtures ([6e4cc87](https://github.com/ideal-postcodes/api-fixtures/commit/6e4cc87953fa43f39a75110c69a71902e8dab0a4))
+
 # [1.2.0](https://github.com/ideal-postcodes/api-fixtures/compare/1.1.0...1.2.0) (2020-10-12)
 
 
