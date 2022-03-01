@@ -1,3 +1,5 @@
+> This package is deprecated. Our OpenAPI spec can be used in conjunction with mock servers to generate fixtures
+
 <h1 align="center">
   <img src="https://img.ideal-postcodes.co.uk/API%20Fixtures%20Logo@3x.png" alt="Ideal Postcodes API Fixtures">
 </h1>
